@@ -1,0 +1,66 @@
+[
+  {
+    "name": "JavaScript",
+    "rating": 5
+  },
+  {
+    "name": "TypeScript",
+    "rating": 5
+  },
+  {
+    "name": "React.js",
+    "rating": 5
+  },
+  {
+    "name": "Next.js",
+    "rating": 4
+  },
+  {
+    "name": "React Native",
+    "rating": 4
+  },
+  {
+    "name": "Node.js",
+    "rating": 5
+  },
+  {
+    "name": "Express.js",
+    "rating": 5
+  },
+  {
+    "name": "MongoDB",
+    "rating": 5
+  },
+  {
+    "name": "Tailwind CSS",
+    "rating": 5
+  },
+  {
+    "name": "Material UI",
+    "rating": 4
+  },
+  {
+    "name": "HTML & CSS",
+    "rating": 5
+  },
+  {
+    "name": "Git & GitHub",
+    "rating": 5
+  },
+  {
+    "name": "WebSockets",
+    "rating": 4
+  },
+  {
+    "name": "WebRTC",
+    "rating": 3
+  },
+  {
+    "name": "AWS S3 & EC2",
+    "rating": 4
+  },
+  {
+    "name": "Redis",
+    "rating": 3
+  }
+]

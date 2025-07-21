@@ -1,10 +1,13 @@
 import type { Metadata } from "next";
 import { Plus_Jakarta_Sans } from "next/font/google";
 import "./globals.css";
+import AboutMe from "./components/AboutMe";
 
 const plusJakartaSans = Plus_Jakarta_Sans({
-  variable: "--font-jakarta-sans",
   subsets: ["latin"],
+  display: "swap",
+  variable: "--font-jakarta",
+  weight: ["400", "500", "600", "700", "800"],
 });
 
 export const metadata: Metadata = {
@@ -20,8 +23,15 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${plusJakartaSans.variable} antialiased`}>
-        {children}
+      <body
+        className={`${plusJakartaSans.variable} antialiased max-w-[1440px] mx-auto`}
+      >
+        <main className="flex w-full min-h-screen gap-3 p-10">
+          <div className="flex w-1/2">{children}</div>
+          <section className="flex w-1/2">
+            <AboutMe />
+          </section>
+        </main>
       </body>
     </html>
   );

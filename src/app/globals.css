@@ -8,7 +8,7 @@
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-jakarta-sans);
+  --font-sans: var(--font-jakarta);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -26,4 +26,6 @@ body {
 
 @theme {
   --color-primary-100: #8325fd;
+  --color-primary-200: #1e1b1e;
+  --color-secondary-100: #9b989c;
 }
