@@ -3,7 +3,7 @@ import React from "react";
 
 const NotFound = () => {
   return (
-    <div className="flex justify-center items-center flex-col gap-3 text-center px-4">
+    <div className="flex justify-center items-center flex-col gap-3 text-center px-4 h-full">
       <h2 className="text-3xl font-semibold">
         <span className="text-primary-100">Oops!</span> You’ve wandered off...
       </h2>

@@ -24,11 +24,14 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${plusJakartaSans.variable} antialiased max-w-[1440px] mx-auto`}
+        className={`${plusJakartaSans.variable} font-sans antialiased max-w-[1440px] mx-auto`}
       >
-        <main className="flex w-full min-h-screen gap-3 p-10">
-          <div className="flex w-1/2">{children}</div>
-          <section className="flex w-1/2">
+        <main className="flex w-full h-screen gap-3 p-10">
+          {/* Left Side - Scrollable */}
+          <div className="w-1/2 overflow-y-auto pr-2">{children}</div>
+
+          {/* Right Side - Stuck on screen */}
+          <section className="w-1/2 sticky top-10 self-start h-fit">
             <AboutMe />
           </section>
         </main>

@@ -1,0 +1,56 @@
+[
+  {
+    "id": "1",
+    "name": "Project 1",
+    "overview": "A full-stack task management tool for remote teams.",
+    "heroImage": "/projects/dummy-image.png",
+    "challenge": "Building a responsive UI and real-time task syncing across users.",
+    "projectDetails": [
+      "Built using React, Node.js, and MongoDB",
+      "Implemented WebSocket for real-time updates",
+      "Deployed on Vercel and Render"
+    ],
+    "previewLink": "https://example.com/project1",
+    "credentials": {
+      "email": "demo@example.com",
+      "password": "password123"
+    },
+    "images": ["/projects/dummy-image.png", "/projects/dummy-image.png"]
+  },
+  {
+    "id": "2",
+    "name": "Project 2",
+    "overview": "An e-commerce app with cart, payments, and admin dashboard.",
+    "heroImage": "/projects/dummy-image.png",
+    "challenge": "Handling complex checkout logic and admin analytics.",
+    "projectDetails": [
+      "Used Next.js, Stripe, and Firebase",
+      "Implemented user authentication and admin role-based access",
+      "SEO optimized with server-side rendering"
+    ],
+    "previewLink": "https://example.com/project2",
+    "credentials": {
+      "email": "admin@example.com",
+      "password": "adminpass"
+    },
+    "images": ["/projects/dummy-image.png", "/projects/dummy-image.png"]
+  },
+  {
+    "id": "3",
+    "name": "Project 3",
+    "overview": "A social media clone for sharing posts and messages.",
+    "heroImage": "/projects/dummy-image.png",
+    "challenge": "Building scalable features like chat and post feeds.",
+    "projectDetails": [
+      "Developed with React Native, Express, and MongoDB",
+      "Real-time chat using Socket.IO",
+      "Used Redux for state management"
+    ],
+    "previewLink": "https://example.com/project3",
+    "credentials": {
+      "email": "user@example.com",
+      "password": "userpass"
+    },
+    "images": ["/projects/dummy-image.png", "/projects/dummy-image.png"]
+  }
+]

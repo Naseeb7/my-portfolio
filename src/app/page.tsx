@@ -1,3 +1,5 @@
-export default function Home() {
-  return <div className="text-primary-100 ">Main body</div>;
+import Home from "./components/Home";
+
+export default function HomePage() {
+  return <Home />;
 }

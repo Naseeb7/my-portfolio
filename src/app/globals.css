@@ -32,3 +32,12 @@ body {
   --color-secondary-300: #3a3a3a;
   --color-secondary-400: #8f8f8f;
 }
+
+/* globals.css */
+::-webkit-scrollbar {
+  width: 2px;
+}
+::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 1px;
+}
