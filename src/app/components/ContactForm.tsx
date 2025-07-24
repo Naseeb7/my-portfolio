@@ -1,14 +1,10 @@
 "use client";
 import React, { useState } from "react";
 import ContainerWrapper from "./ContainerWrapper";
-import Image from "next/image";
-import Link from "next/link";
+import FormField from "./UI/FormField";
+import Button from "./UI/Button";
 
-interface ContactFormProps {
-  isExpanded?: boolean;
-}
-
-const ContactForm: React.FC<ContactFormProps> = () => {
+const ContactForm: React.FC = () => {
   const [form, setForm] = useState({
     name: "",
     email: "",
@@ -29,89 +25,53 @@ const ContactForm: React.FC<ContactFormProps> = () => {
   };
 
   return (
-    <ContainerWrapper className="flex-col">
-      <Link href={"/contact"}>
-        <label
-          htmlFor="contactForm"
-          className="flex justify-between items-center"
-        >
-          <p>
-            <span>Let&apos;s</span> Connect
-          </p>
-          <Image
-            src={"/icons/rightArrow.svg"}
-            height={24}
-            width={24}
-            alt="Arrow"
-          />
-        </label>
-      </Link>
-      <form onSubmit={handleSubmit} className="" name="contactForm">
-        <div>
-          <label htmlFor="name" className="block font-semibold">
-            Name
-          </label>
-          <input
-            type="text"
-            id="name"
-            name="name"
-            value={form.name}
-            onChange={handleChange}
-            className="w-full border border-gray-300 rounded px-3 py-2 mt-1"
-            required
-          />
-        </div>
+    <ContainerWrapper className="flex-col gap-3">
+      <label htmlFor="contactForm" className=" text-[32px] font-extrabold">
+        Let&apos;s <span className="text-primary-100">Connect</span>
+      </label>
+      <form
+        onSubmit={handleSubmit}
+        className="flex gap-3 flex-col"
+        name="contactForm"
+      >
+        {/* <div className="flex flex-col gap-3 w-2/5"> */}
+        <FormField
+          name="name"
+          value={form.name}
+          onChange={handleChange}
+          placeholder="Enter your full name"
+        />
 
-        <div>
-          <label htmlFor="email" className="block font-semibold">
-            Email
-          </label>
-          <input
-            type="email"
-            id="email"
-            name="email"
-            value={form.email}
-            onChange={handleChange}
-            className="w-full border border-gray-300 rounded px-3 py-2 mt-1"
-            required
-          />
-        </div>
+        <FormField
+          name="email"
+          type="email"
+          value={form.email}
+          onChange={handleChange}
+          placeholder="Enter your email id"
+        />
+        {/* </div> */}
 
-        <div>
-          <label htmlFor="phone" className="block font-semibold">
-            Phone
-          </label>
-          <input
-            type="tel"
-            id="phone"
+        {/* <div className="flex flex-col gap-3 w-3/5"> */}
+        <FormField
+          name="message"
+          value={form.message}
+          onChange={handleChange}
+          placeholder="Anything you want to say.."
+        />
+        <div className="flex gap-3">
+          <FormField
             name="phone"
+            type="tel"
             value={form.phone}
             onChange={handleChange}
-            className="w-full border border-gray-300 rounded px-3 py-2 mt-1"
+            placeholder="Enter your mobile number"
           />
-        </div>
 
-        <div>
-          <label htmlFor="message" className="block font-semibold">
-            Message
-          </label>
-          <textarea
-            id="message"
-            name="message"
-            rows={4}
-            value={form.message}
-            onChange={handleChange}
-            className="w-full border border-gray-300 rounded px-3 py-2 mt-1"
-            required
-          />
+          <Button type="submit" width="w-1/3">
+            Send
+          </Button>
+          {/* </div> */}
         </div>
-
-        <button
-          type="submit"
-          className="bg-primary-600 text-white px-4 py-2 rounded hover:bg-primary-700 transition"
-        >
-          Send Message
-        </button>
       </form>
     </ContainerWrapper>
   );

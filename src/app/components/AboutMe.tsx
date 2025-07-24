@@ -3,7 +3,7 @@ import ContainerWrapper from "./ContainerWrapper";
 import Image from "next/image";
 import { socials } from "@/app/constants";
 import Skills from "@/data/skills.json";
-import ContactForm from "./ContactForm";
+import Link from "next/link";
 
 const AboutMe = () => {
   return (
@@ -64,16 +64,43 @@ const AboutMe = () => {
         </div>
       </div>
 
-      {/* Social Links */}
-      <ContainerWrapper className="justify-between">
-        <h4 className="font-extrabold text-xl text-primary-100">Skills</h4>
-        <p className="font-medium w-4/5 truncate">
-          {Skills?.map((t) => t.name)?.join(", ")}
-        </p>
-      </ContainerWrapper>
+      {/* Skills */}
+      <Link href={"/skills"}>
+        <ContainerWrapper className="justify-between items-center">
+          <h4 className="font-extrabold text-2xl text-primary-100">Skills</h4>
+          <div className="flex w-4/5 justify-between">
+            <p className="font-medium w-11/12 truncate">
+              {Skills?.map((t) => t.name)?.join(", ")}
+            </p>
+            <Image
+              src={"/icons/rightArrow.svg"}
+              height={24}
+              width={24}
+              alt="Arrow"
+            />
+          </div>
+        </ContainerWrapper>
+      </Link>
 
-      {/* Contact Form */}
-      <ContactForm />
+      {/* Contact Section */}
+      <Link href={"/contact"}>
+        <ContainerWrapper className=" flex-col gap-4">
+          <div className="flex text-2xl font-extrabold justify-between w-full items-center">
+            <span>
+              <span className="text-primary-100">Connect</span> with me
+            </span>
+            <Image
+              src={"/icons/rightArrow.svg"}
+              height={24}
+              width={24}
+              alt="Arrow"
+            />
+          </div>
+          <p>
+            Got a project in mind or just want to say hello? Let’s get in touch.
+          </p>
+        </ContainerWrapper>
+      </Link>
     </div>
   );
 };

@@ -28,4 +28,7 @@ body {
   --color-primary-100: #8325fd;
   --color-primary-200: #1e1b1e;
   --color-secondary-100: #9b989c;
+  --color-secondary-200: #282528;
+  --color-secondary-300: #3a3a3a;
+  --color-secondary-400: #8f8f8f;
 }
