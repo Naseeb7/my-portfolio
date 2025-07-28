@@ -26,12 +26,12 @@ export default function RootLayout({
       <body
         className={`${plusJakartaSans.variable} font-sans antialiased max-w-[1440px] mx-auto`}
       >
-        <main className="flex w-full h-screen gap-3 p-10">
+        <main className="flex w-full gap-3 p-10">
           {/* Left Side - Scrollable */}
-          <div className="w-1/2 overflow-y-auto pr-2">{children}</div>
+          <div className="w-[52%] overflow-y-auto pr-2">{children}</div>
 
           {/* Right Side - Stuck on screen */}
-          <section className="w-1/2 sticky top-10 self-start h-fit">
+          <section className="w-[48%] sticky top-10 self-start h-fit flex">
             <AboutMe />
           </section>
         </main>

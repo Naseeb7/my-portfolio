@@ -7,7 +7,7 @@ import Link from "next/link";
 
 const AboutMe = () => {
   return (
-    <div className="flex flex-col w-full gap-3 ">
+    <div className="flex flex-col w-full gap-3 'h-full overflow-y-auto">
       {/* Header */}
       <ContainerWrapper className="rounded-[20px] justify-between">
         <p className="text-[32px] font-extrabold">

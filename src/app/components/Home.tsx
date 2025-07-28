@@ -40,8 +40,8 @@ const Home = () => {
             />
           </div>
           <p>
-            As a Full Stack Developer with 1.6 years of experience, I aim to
-            enhance my skills in both frontend and backend technologies. I’m
+            As a Full Stack Developer with around 2 years of experience, I aim
+            to enhance my skills in both frontend and backend technologies. I’m
             eager to take on challenging projects, collaborate with teams, and
             grow in a dynamic environment, ultimately progressing towards a
             senior development role.
