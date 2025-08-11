@@ -1,10 +1,10 @@
-import React from "react";
+import React, { Suspense } from "react";
 import ContainerWrapper from "./ContainerWrapper";
 import Button from "./UI/Button";
 import Image from "next/image";
 import Projects from "@/data/projects.json";
-import ProjectCard from "./UI/ProjectCard";
 import Link from "next/link";
+import ProjectsGrid from "./ProjectsGrid";
 
 const Home = () => {
   return (
@@ -64,15 +64,13 @@ const Home = () => {
             />
           </div>
         </Link>
-        <div className="flex justify-between gap-3">
-          {Projects?.map((project) => {
-            return (
-              <div key={project.id} className="flex w-1/3">
-                <ProjectCard {...project} showName={false} />
-              </div>
-            );
-          })}
-        </div>
+        <Suspense fallback={<div>Loading projects...</div>}>
+          <ProjectsGrid
+            projects={Projects}
+            className="grid-cols-3"
+            showNames={false}
+          />
+        </Suspense>
       </ContainerWrapper>
     </section>
   );

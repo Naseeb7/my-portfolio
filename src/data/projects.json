@@ -29,10 +29,6 @@
       "SEO optimized with server-side rendering"
     ],
     "previewLink": "https://example.com/project2",
-    "credentials": {
-      "email": "admin@example.com",
-      "password": "adminpass"
-    },
     "images": ["/projects/dummy-image.png", "/projects/dummy-image.png"]
   },
   {

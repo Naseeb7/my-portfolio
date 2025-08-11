@@ -1,9 +1,9 @@
-import React from "react";
+import React, { Suspense } from "react";
 import ContainerWrapper from "../components/ContainerWrapper";
 import Image from "next/image";
 import Projects from "@/data/projects.json";
-import ProjectCard from "../components/UI/ProjectCard";
 import Link from "next/link";
+import ProjectsGrid from "../components/ProjectsGrid";
 
 const ProjectsPage = () => {
   return (
@@ -22,11 +22,9 @@ const ProjectsPage = () => {
             />
           </Link>
         </div>
-        <div className="grid grid-cols-2 gap-x-3 gap-y-6">
-          {Projects.map((project) => {
-            return <ProjectCard {...project} key={project.name} />;
-          })}
-        </div>
+        <Suspense fallback={<div>Loading projects...</div>}>
+          <ProjectsGrid projects={Projects} className="grid-cols-2" />
+        </Suspense>
       </ContainerWrapper>
     </section>
   );

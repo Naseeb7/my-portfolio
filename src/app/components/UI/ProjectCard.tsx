@@ -1,16 +1,16 @@
 import Image from "next/image";
 import React from "react";
 import { IProject } from "@/app/constants/types";
-import Link from "next/link";
 
 const ProjectCard = ({
   heroImage,
   name,
+  id,
   showName = true,
 }: IProject & { showName?: boolean }) => {
   return (
-    <Link
-      href={`/project/${name}`}
+    <div
+      key={id}
       className="flex flex-col gap-3 hover:cursor-pointer w-full group"
     >
       <div className="flex h-[168px] w-full relative">
@@ -28,7 +28,7 @@ const ProjectCard = ({
       </div>
 
       {showName && <h4 className="text-xl font-extrabold">{name}</h4>}
-    </Link>
+    </div>
   );
 };
 

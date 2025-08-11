@@ -6,7 +6,7 @@ export interface IProject {
   challenge: string;
   projectDetails: string[];
   previewLink: string;
-  credentials: {
+  credentials?: {
     email: string;
     password: string;
   };
