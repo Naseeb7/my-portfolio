@@ -1,0 +1,43 @@
+import Image from "next/image";
+import React from "react";
+
+type SkillCardProps = {
+  name: string;
+  rating: number;
+  desc?: string;
+};
+
+const SkillCard = ({ name, rating, desc = "" }: SkillCardProps) => {
+  return (
+    <div className="flex flex-col p-4 rounded-2xl bg-secondary-200 gap-3 w-full">
+      <div className="flex w-full justify-between items-center">
+        <h4 className="text-2xl font-bold">{name}</h4>
+        <div className="flex gap-1">
+          {Array.from({ length: 5 }, (_, i) => {
+            const filled = i < rating;
+            return filled ? (
+              <Image
+                key={i}
+                src={"/icons/filledStar.svg"}
+                height={12}
+                width={12}
+                alt="Filled Star"
+              />
+            ) : (
+              <Image
+                key={i}
+                src={"/icons/whiteStar.svg"}
+                height={12}
+                width={12}
+                alt="White Star"
+              />
+            );
+          })}
+        </div>
+      </div>
+      <p>{desc}</p>
+    </div>
+  );
+};
+
+export default SkillCard;

@@ -1,5 +1,9 @@
 import React from "react";
 import { IExperience } from "../constants/types";
+import SkillCard from "./UI/SkillCard";
+import Skills from "@/data/skills.json";
+import Image from "next/image";
+import Link from "next/link";
 
 const ExperienceSection = ({
   company,
@@ -12,7 +16,7 @@ const ExperienceSection = ({
   awards,
 }: IExperience) => {
   return (
-    <div className="flex flex-col gap-6">
+    <div className="flex flex-col gap-6 w-full">
       <div className="flex flex-col gap-3">
         <h2 className="text-xl font-extrabold">
           {role} - {company}
@@ -47,11 +51,21 @@ const ExperienceSection = ({
       )}
       <div className="flex flex-col gap-4">
         <h3 className="text-xl font-extrabold">Technologies used:</h3>
-        <ul className="list-disc pl-5 space-y-4">
-          {technologiesUsed?.map((item, index) => {
-            return <li key={`${index}_experience`}>{item}</li>;
+        <div className="grid grid-cols-2 gap-3">
+          {technologiesUsed?.map((item) => {
+            const skillDetails = Skills.find((sk) => sk.id === item);
+            return skillDetails && <SkillCard key={item} {...skillDetails} />;
           })}
-        </ul>
+        </div>
+        <Link href={"/skills"} className="flex gap-3 font-semibold">
+          All Skills{" "}
+          <Image
+            src={"/icons/rightArrow.svg"}
+            height={16}
+            width={16}
+            alt="Arrow"
+          />
+        </Link>
       </div>
     </div>
   );
