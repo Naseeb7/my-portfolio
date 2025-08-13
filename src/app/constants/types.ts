@@ -12,3 +12,14 @@ export interface IProject {
   };
   images: string[];
 }
+
+export interface IExperience {
+  role: string;
+  company: string;
+  startDate: string;
+  endDate: string | "Present";
+  experience: string[];
+  keyAchievements: string[];
+  awards?: string[];
+  technologiesUsed: string[];
+}

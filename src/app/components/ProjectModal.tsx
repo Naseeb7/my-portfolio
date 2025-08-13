@@ -31,8 +31,8 @@ export default function ProjectModal({
   }, []);
 
   const modalContent = (
-    <div className="fixed inset-0 z-50 w-full p-10">
-      <ContainerWrapper className="max-h-[90dvh] overflow-y-auto">
+    <div className="fixed inset-0 z-50 w-full p-10 flex bg-background">
+      <ContainerWrapper className="max-h-screen overflow-y-auto">
         <ProjectSection {...project} onClose={onClose} />
       </ContainerWrapper>
     </div>
