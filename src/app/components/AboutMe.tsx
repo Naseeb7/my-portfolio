@@ -4,17 +4,13 @@ import Image from "next/image";
 import { socials } from "@/app/constants";
 import Skills from "@/data/skills.json";
 import Link from "next/link";
+import AboutMeHeader from "./AboutMeHeader";
 
 const AboutMe = () => {
   return (
     <div className="flex flex-col w-full gap-3 'h-full overflow-y-auto">
       {/* Header */}
-      <ContainerWrapper className="rounded-[20px] justify-between">
-        <p className="text-[32px] font-extrabold">
-          About <span className="text-primary-100">Myself</span>
-        </p>
-        <Image src={"/icons/menuItem.svg"} height={32} width={32} alt="Menu" />
-      </ContainerWrapper>
+      <AboutMeHeader />
 
       {/* About and Social Links */}
       <div className="flex gap-3">

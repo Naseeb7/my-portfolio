@@ -20,3 +20,31 @@ export const socials = [
     icon: "/icons/email.svg",
   },
 ];
+
+export const sideMenuOptions = [
+  {
+    label: "About",
+    href: "/",
+  },
+  {
+    label: "Experience",
+    href: "/experience",
+  },
+  {
+    label: "Creations",
+    href: "/projects",
+  },
+  {
+    label: "Skills",
+    href: "/skills",
+  },
+  {
+    label: "Contact",
+    href: "/contact",
+  },
+  {
+    label: "Coverdev",
+    href: "https://coverdev.vercel.app/",
+    external: true,
+  },
+];

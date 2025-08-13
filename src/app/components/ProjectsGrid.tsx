@@ -5,6 +5,7 @@ import { useSearchParams, useRouter } from "next/navigation";
 import ProjectCard from "./UI/ProjectCard";
 import { IProject } from "../constants/types";
 import ProjectModal from "./ProjectModal";
+import useBodyScrollLock from "../hooks/useBodyScrollLock";
 
 export default function ProjectsGrid({
   projects,
@@ -19,6 +20,7 @@ export default function ProjectsGrid({
   const searchParams = useSearchParams();
   const router = useRouter();
 
+  useBodyScrollLock(!!selected);
   // Check for project_id in query params on mount
   useEffect(() => {
     const projectId = searchParams.get("project_id");
@@ -58,7 +60,7 @@ export default function ProjectsGrid({
         ))}
       </div>
 
-      {selected && <ProjectModal project={selected} onClose={closeModal} />}
+      <ProjectModal project={selected} onClose={closeModal} />
     </>
   );
 }
