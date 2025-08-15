@@ -5,10 +5,16 @@ import Image from "next/image";
 import Projects from "@/data/projects.json";
 import Link from "next/link";
 import ProjectsGrid from "./ProjectsGrid";
+import SocialLinks from "./About/SocialLinks";
+import AboutSkillsSection from "./About/AboutSkillsSection";
+import AboutContactSection from "./About/AboutContactSection";
 
 const Home = () => {
   return (
     <section className="flex w-full flex-col gap-3">
+      <div className="flex w-full md:hidden">
+        <SocialLinks />
+      </div>
       {/* Top Section */}
       <ContainerWrapper className="relative">
         <p className="text-[52px] font-extrabold">
@@ -72,6 +78,10 @@ const Home = () => {
           />
         </Suspense>
       </ContainerWrapper>
+      <div className="flex flex-col gap-3 w-full md:hidden">
+        <AboutSkillsSection />
+        <AboutContactSection />
+      </div>
     </section>
   );
 };

@@ -3,6 +3,7 @@ import { Plus_Jakarta_Sans } from "next/font/google";
 import "./globals.css";
 import AboutMe from "./components/AboutMe";
 import AnimatedPageWrapper from "./components/AnimatedPageWrapper";
+import AboutMeHeader from "./components/AboutMeHeader";
 
 const plusJakartaSans = Plus_Jakarta_Sans({
   subsets: ["latin"],
@@ -27,15 +28,21 @@ export default function RootLayout({
       <body
         className={`${plusJakartaSans.variable} font-sans antialiased max-w-[1440px] mx-auto`}
       >
-        <main className="flex w-full gap-3 p-10">
+        <main className="flex flex-col-reverse md:flex-row w-full gap-3 pb-3 md:p-10">
           {/* Left Side - Scrollable */}
           <AnimatedPageWrapper>
-            <div className="w-full overflow-y-auto pr-2">{children}</div>
+            <div className="w-full overflow-y-auto px-3 md:pl-0 md:pr-2">
+              {children}
+            </div>
           </AnimatedPageWrapper>
 
-          {/* Right Side - Stuck on screen */}
-          <section className="w-[48%] sticky top-10 self-start h-fit flex">
+          {/* Right Side - Stuck on screen for larger screens */}
+          <section className="w-[48%] sticky top-10 self-start h-fit hidden md:flex">
             <AboutMe />
+          </section>
+
+          <section className="flex md:hidden w-full sticky top-0 ">
+            <AboutMeHeader />
           </section>
         </main>
       </body>

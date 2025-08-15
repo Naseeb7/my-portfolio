@@ -23,7 +23,7 @@ const SideMenu = ({ onClose, isOpen }: SideMenuProps) => {
           exit={{ opacity: 0 }}
         >
           <motion.div
-            className="flex flex-col gap-4 bg-background/95 w-1/4 p-5"
+            className="flex flex-col gap-4 bg-background/95 w-full md:w-1/4 p-5"
             onClick={(e) => e.stopPropagation()}
             initial={{ x: "100%" }}
             animate={{ x: 0 }}
