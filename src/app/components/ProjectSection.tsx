@@ -17,9 +17,12 @@ const ProjectSection = ({
   onClose,
 }: IProject & { onClose?: () => void }) => {
   return (
-    <div id={id} className="flex flex-col w-full gap-11 rounded-[20px] h-fit">
+    <div
+      id={id}
+      className="flex flex-col w-full gap-6 lg:gap-8 rounded-[20px] h-fit"
+    >
       <div className="flex items-center justify-between w-full">
-        <h1 className="text-[32px] font-extrabold">{name}</h1>
+        <h1 className="text-2xl lg:text-[32px] font-extrabold">{name}</h1>
         <div onClick={() => onClose?.()}>
           <Image
             src={"/icons/crossIcon.svg"}
@@ -34,23 +37,23 @@ const ProjectSection = ({
       <Image
         src={heroImage}
         alt={name}
-        className="h-[440px] w-full object-cover rounded-4xl"
+        className="h-[220px] lg:h-[440px] w-full object-cover rounded-4xl"
         width={1200}
         height={440}
         objectFit="cover"
       />
 
       <div className="flex flex-col gap-4">
-        <h2 className="text-[32px] font-extrabold">Overview</h2>
+        <h2 className="text-2xl lg:text-[32px] font-extrabold">Overview</h2>
         <p>{overview}</p>
       </div>
 
       <div className="flex flex-col gap-4">
-        <h2 className="text-[32px] font-extrabold">Challenge</h2>
+        <h2 className="text-2xl lg:text-[32px] font-extrabold">Challenge</h2>
         <p>{challenge}</p>
       </div>
 
-      <div className="grid grid-cols-2 grid-rows-2 gap-4 h-[440px]">
+      <div className="grid lg:grid-cols-2 lg:grid-rows-2 gap-4 lg:h-[440px]">
         {images && images.length > 0 ? (
           images.slice(0, 3).map((photo, index) => (
             <div
@@ -60,7 +63,7 @@ const ProjectSection = ({
               <Image
                 src={photo}
                 alt={`${name} photo ${index + 1}`}
-                className="h-full w-full object-cover rounded-4xl"
+                className="h-[220px] lg:h-full w-full object-cover rounded-4xl"
                 width={720}
                 height={440}
               />
@@ -80,7 +83,9 @@ const ProjectSection = ({
       </div>
 
       <div className="flex flex-col gap-4">
-        <h2 className="text-[32px] font-extrabold">Project Details</h2>
+        <h2 className="text-2xl lg:text-[32px] font-extrabold">
+          Project Details
+        </h2>
         <ul className="list-disc pl-5">
           {projectDetails.map((detail, index) => (
             <li key={index}>{detail}</li>
@@ -89,7 +94,7 @@ const ProjectSection = ({
       </div>
 
       <div className="flex flex-col gap-4">
-        <h2 className="text-[32px] font-extrabold">Live Preview</h2>
+        <h2 className="text-2xl lg:text-[32px] font-extrabold">Live Preview</h2>
         <Link
           href={previewLink}
           target="_blank"
@@ -100,7 +105,7 @@ const ProjectSection = ({
         {credentials && (
           <div className="flex flex-col gap-3 ">
             <span className="text-2xl font-bold">Credentials</span>
-            <div className="flex gap-4 text-secondary-100">
+            <div className="flex flex-col lg:flex-row gap-4 text-secondary-100">
               <span className="font-semibold">
                 Username: {credentials.email}
               </span>
@@ -112,13 +117,13 @@ const ProjectSection = ({
         )}
       </div>
 
-      <div className="flex flex-col gap-10">
+      <div className="flex flex-col gap-5 lg:gap-10">
         <span className="flex justify-center w-full font-extrabold">
           Need to Know More about the Projects?
         </span>
-        <div className="flex w-full items-center">
-          <div className="h-[1px] bg-gradient-to-r from-brand-200 to-white/50 w-1/2" />
-          <Button className="font-semibold" width="w-1/6">
+        <div className="flex w-full items-center justify-center lg:justify-normal">
+          <div className="hidden lg:block h-[1px] bg-gradient-to-r from-brand-200 to-white/50 w-1/2" />
+          <Button className="font-semibold" width="lg:w-1/6 w-2/3">
             <Link className="flex gap-1" href={"/contact"}>
               Let&apos;s Connect
               <Image
@@ -129,7 +134,7 @@ const ProjectSection = ({
               />
             </Link>
           </Button>
-          <div className="h-[1px] bg-gradient-to-l from-brand-200 to-white/50 w-1/2" />
+          <div className="hidden lg:block h-[1px] bg-gradient-to-l from-brand-200 to-white/50 w-1/2" />
         </div>
       </div>
     </div>

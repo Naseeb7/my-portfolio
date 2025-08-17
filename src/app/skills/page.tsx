@@ -8,13 +8,13 @@ const SkillsPage = () => {
   return (
     <section>
       <ContainerWrapper className="gap-8 flex-col">
-        <div className="flex w-full justify-between items-center">
+        <div className="flex w-full justify-between items-start lg:items-center">
           <p className="text-[32px] font-extrabold">
             Technical <span className="text-primary-100">Proficiencies</span>
           </p>
           <ClientBackButton />
         </div>
-        <div className="grid grid-cols-2 gap-3">
+        <div className="grid md:grid-cols-2 gap-3">
           {Skills.map((skill) => {
             return <SkillCard key={skill.id} {...skill} />;
           })}

@@ -23,7 +23,7 @@ const ProjectsPage = () => {
           </Link>
         </div>
         <Suspense fallback={<div>Loading projects...</div>}>
-          <ProjectsGrid projects={Projects} className="grid-cols-2" />
+          <ProjectsGrid projects={Projects} className="lg:grid-cols-2" />
         </Suspense>
       </ContainerWrapper>
     </section>

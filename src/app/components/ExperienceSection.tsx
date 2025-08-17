@@ -51,7 +51,7 @@ const ExperienceSection = ({
       )}
       <div className="flex flex-col gap-4">
         <h3 className="text-xl font-extrabold">Technologies used:</h3>
-        <div className="grid grid-cols-2 gap-3">
+        <div className="grid lg:grid-cols-2 gap-3">
           {technologiesUsed?.map((item) => {
             const skillDetails = Skills.find((sk) => sk.id === item);
             return skillDetails && <SkillCard key={item} {...skillDetails} />;

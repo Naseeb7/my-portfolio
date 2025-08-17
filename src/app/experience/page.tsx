@@ -9,7 +9,7 @@ const ExperiencePage = () => {
   return (
     <section>
       <ContainerWrapper className="flex-col gap-8">
-        <div className="flex w-full justify-between items-center">
+        <div className="flex w-full justify-between lg:items-center">
           <h1 className="text-[32px] font-extrabold">
             Experience on <span className="text-primary-100">Full Stack</span>
           </h1>

@@ -6,6 +6,7 @@ import ProjectCard from "./UI/ProjectCard";
 import { IProject } from "../constants/types";
 import ProjectModal from "./ProjectModal";
 import useBodyScrollLock from "../hooks/useBodyScrollLock";
+import useIsMobile from "../hooks/useIsMobile";
 
 export default function ProjectsGrid({
   projects,
@@ -19,6 +20,7 @@ export default function ProjectsGrid({
   const [selected, setSelected] = useState<IProject | null>(null);
   const searchParams = useSearchParams();
   const router = useRouter();
+  const isMobile = useIsMobile();
 
   useBodyScrollLock(!!selected);
   // Check for project_id in query params on mount
@@ -55,7 +57,7 @@ export default function ProjectsGrid({
             onClick={() => openProject(project)}
             className="cursor-pointer"
           >
-            <ProjectCard {...project} showName={showNames} />
+            <ProjectCard {...project} showName={showNames || isMobile} />
           </div>
         ))}
       </div>

@@ -13,7 +13,7 @@ const AboutMeHeader = () => {
   useBodyScrollLock(showMenu || showAbout);
   return (
     <div className="flex w-full relative">
-      <ContainerWrapper className="rounded-[20px] justify-between hidden md:flex">
+      <ContainerWrapper className="rounded-[20px] justify-between hidden lg:flex">
         <p className="text-[32px] font-extrabold">
           About <span className="text-primary-100">Myself</span>
         </p>
@@ -26,7 +26,7 @@ const AboutMeHeader = () => {
           className="hover:cursor-pointer"
         />
       </ContainerWrapper>
-      <div className="flex md:hidden justify-between w-full items-center bg-primary-200/80 py-4 px-6 overflow-y-auto">
+      <div className="flex lg:hidden justify-between w-full items-center bg-primary-200/80 py-4 px-6 overflow-y-auto">
         <Image
           src="/side-menu-profile-image.webp"
           height={32}

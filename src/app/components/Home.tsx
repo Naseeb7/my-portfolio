@@ -12,19 +12,19 @@ import AboutContactSection from "./About/AboutContactSection";
 const Home = () => {
   return (
     <section className="flex w-full flex-col gap-3">
-      <div className="flex w-full md:hidden">
+      <div className="flex w-full lg:hidden">
         <SocialLinks />
       </div>
       {/* Top Section */}
-      <ContainerWrapper className="relative">
-        <p className="text-[52px] font-extrabold">
+      <ContainerWrapper className="relative flex-col gap-4">
+        <h1 className="text-4xl lg:text-[52px] font-extrabold">
           Full Stack Solutions for Your Real-World Challenges.
-        </p>
+        </h1>
         <Link href={"/contact"}>
           <Button
-            className="absolute bottom-5 right-5"
+            className="lg:absolute bottom-5 right-5"
             rounded="rounded-full"
-            width="w-1/5"
+            width="w-full lg:w-1/5"
           >
             Hire Me👋
           </Button>
@@ -35,7 +35,7 @@ const Home = () => {
       <Link href={"/experience"}>
         <ContainerWrapper className="flex-col gap-3">
           <div className="flex w-full justify-between items-start">
-            <p className="text-[32px] font-extrabold">
+            <p className="text-2xl lg:text-[32px] font-extrabold">
               Experience on <span className="text-primary-100">Full Stack</span>
             </p>
             <Image
@@ -59,7 +59,7 @@ const Home = () => {
       <ContainerWrapper className="flex-col gap-3">
         <Link href={"/projects"}>
           <div className="flex w-full justify-between items-start">
-            <p className="text-[32px] font-extrabold">
+            <p className="text-2xl lg:text-[32px] font-extrabold">
               My Best <span className="text-primary-100">Creations</span>
             </p>
             <Image
@@ -73,12 +73,12 @@ const Home = () => {
         <Suspense fallback={<div>Loading projects...</div>}>
           <ProjectsGrid
             projects={Projects}
-            className="grid-cols-3"
+            className="lg:grid-cols-3"
             showNames={false}
           />
         </Suspense>
       </ContainerWrapper>
-      <div className="flex flex-col gap-3 w-full md:hidden">
+      <div className="flex flex-col gap-3 w-full lg:hidden">
         <AboutSkillsSection />
         <AboutContactSection />
       </div>

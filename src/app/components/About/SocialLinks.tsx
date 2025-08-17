@@ -5,15 +5,15 @@ import { socials } from "@/app/constants";
 
 const SocialLinks = () => {
   return (
-    <div className="flex flex-col md:flex-row gap-3 w-full">
+    <div className="flex flex-col lg:flex-row gap-3 w-full">
       <Image
         src="/profile-image.webp"
         height={336}
         width={332}
-        className="h-[336px] w-full md:w-1/2 flex rounded-xl object-contain"
+        className="h-[336px] w-full lg:w-1/2 flex rounded-xl object-contain"
         alt="Pradosh"
       />
-      <div className="flex flex-col gap-3 w-full md:w-1/2">
+      <div className="flex flex-col gap-3 w-full lg:w-1/2">
         <ContainerWrapper className="justify-between font-medium">
           <span className="text-secondary-100">Name:</span>
           <span>Pradosh Chand</span>

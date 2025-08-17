@@ -26,22 +26,22 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${plusJakartaSans.variable} font-sans antialiased max-w-[1440px] mx-auto`}
+        className={`${plusJakartaSans.variable} font-sans antialiased max-w-md lg:max-w-[1440px] mx-auto`}
       >
-        <main className="flex flex-col-reverse md:flex-row w-full gap-3 pb-3 md:p-10">
+        <main className="flex flex-col-reverse lg:flex-row w-full gap-3 pb-3 lg:p-10">
           {/* Left Side - Scrollable */}
           <AnimatedPageWrapper>
-            <div className="w-full overflow-y-auto px-3 md:pl-0 md:pr-2">
+            <div className="w-full overflow-y-auto px-3 lg:pl-0 lg:pr-2">
               {children}
             </div>
           </AnimatedPageWrapper>
 
           {/* Right Side - Stuck on screen for larger screens */}
-          <section className="w-[48%] sticky top-10 self-start h-fit hidden md:flex">
+          <section className="w-[48%] sticky top-10 self-start h-fit hidden lg:flex">
             <AboutMe />
           </section>
 
-          <section className="flex md:hidden w-full sticky top-0 ">
+          <section className="flex lg:hidden w-full sticky top-0 ">
             <AboutMeHeader />
           </section>
         </main>
