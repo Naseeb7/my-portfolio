@@ -16,7 +16,7 @@ const Home = () => {
         <SocialLinks />
       </div>
       {/* Top Section */}
-      <ContainerWrapper className="relative flex-col gap-4">
+      <ContainerWrapper className="relative flex-col gap-5">
         <h1 className="text-4xl lg:text-[52px] font-extrabold">
           Full Stack Solutions for Your Real-World Challenges.
         </h1>

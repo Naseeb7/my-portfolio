@@ -14,7 +14,7 @@ const SkillsPage = () => {
           </p>
           <ClientBackButton />
         </div>
-        <div className="grid md:grid-cols-2 gap-3">
+        <div className="grid lg:grid-cols-2 gap-3">
           {Skills.map((skill) => {
             return <SkillCard key={skill.id} {...skill} />;
           })}

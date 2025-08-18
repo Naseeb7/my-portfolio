@@ -14,6 +14,7 @@ const ContactForm: React.FC = () => {
     phone: "",
     message: "",
   });
+  const [submitting, setSubmitting] = useState(false);
 
   const handleChange = (
     e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
@@ -21,10 +22,30 @@ const ContactForm: React.FC = () => {
     setForm({ ...form, [e.target.name]: e.target.value });
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    // TODO: Send this to API or email logic
-    console.log(form);
+    const { name, email, phone } = form;
+    if (!name || !email || !phone) console.log("Fill mandatory fields");
+    try {
+      setSubmitting(true);
+      const response = await fetch("/api/contact", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(form),
+      });
+      if (response.ok) {
+        alert("Message sent!");
+        setForm({ name: "", email: "", phone: "", message: "" });
+      } else {
+        alert("Error sending message.");
+      }
+    } catch (error) {
+      console.log("Form submission error:", error);
+    } finally {
+      setSubmitting(false);
+    }
   };
 
   return (
@@ -56,12 +77,13 @@ const ContactForm: React.FC = () => {
         className="flex gap-5 flex-col"
         name="contactForm"
       >
-        {/* <div className="flex flex-col gap-3 w-2/5"> */}
         <FormField
           name="name"
           value={form.name}
           onChange={handleChange}
           placeholder="Enter your full name"
+          required
+          disabled={submitting}
         />
 
         <FormField
@@ -70,14 +92,17 @@ const ContactForm: React.FC = () => {
           value={form.email}
           onChange={handleChange}
           placeholder="Enter your email id"
+          required
+          disabled={submitting}
         />
-        {/* </div> */}
         <FormField
           name="phone"
           type="tel"
           value={form.phone}
           onChange={handleChange}
           placeholder="Enter your mobile number"
+          required
+          disabled={submitting}
         />
 
         <textarea
@@ -86,11 +111,12 @@ const ContactForm: React.FC = () => {
           onChange={handleChange}
           placeholder="Anything you want to say.."
           rows={8}
+          disabled={submitting}
           className="border border-secondary-300 px-3 py-4 outline-none text-secondary-400 font-medium placeholder:text-secondary-400 bg-secondary-200 rounded-xl resize-none"
         />
 
         <Button type="submit" className="py-4">
-          Send
+          {submitting ? "Sending" : "Send"}
         </Button>
       </form>
     </ContainerWrapper>

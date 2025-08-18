@@ -12,6 +12,7 @@ interface FormFieldProps {
   placeholder?: string;
   className?: string;
   width?: string;
+  disabled?: boolean;
 }
 
 const FormField: React.FC<FormFieldProps> = ({
@@ -23,6 +24,7 @@ const FormField: React.FC<FormFieldProps> = ({
   placeholder = "",
   className = "",
   width = "w-full",
+  disabled = false,
 }) => {
   return (
     <input
@@ -37,6 +39,7 @@ const FormField: React.FC<FormFieldProps> = ({
         `${width} border border-secondary-300 px-3 py-4 outline-none text-secondary-400 font-medium placeholder:text-secondary-400 bg-secondary-200 rounded-xl`,
         className
       )}
+      disabled={disabled}
     />
   );
 };
