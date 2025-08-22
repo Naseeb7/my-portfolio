@@ -7,17 +7,30 @@ import SkillCard from "../components/UI/SkillCard";
 const SkillsPage = () => {
   return (
     <section>
-      <ContainerWrapper className="gap-8 flex-col">
-        <div className="flex w-full justify-between items-start lg:items-center">
-          <p className="text-[32px] font-extrabold">
+      <ContainerWrapper className="flex flex-col gap-8">
+        <header className="flex w-full justify-between items-start lg:items-center">
+          <h1 className="text-[32px] font-extrabold">
             Technical <span className="text-primary-100">Proficiencies</span>
-          </p>
+          </h1>
           <ClientBackButton />
-        </div>
-        <div className="grid lg:grid-cols-2 gap-3">
-          {Skills.map((skill) => {
-            return <SkillCard key={skill.id} {...skill} />;
-          })}
+        </header>
+
+        <div className="flex flex-col gap-6">
+          <p>
+            Comprehensive expertise across web, mobile, and cloud technologies.
+          </p>
+          {Object.entries(Skills).map(([category, skillList]) => (
+            <section key={category} className="flex flex-col gap-4">
+              <h2 className="text-xl font-semibold text-secondary-100">
+                {category}
+              </h2>
+              <div className="grid gap-3 lg:grid-cols-2">
+                {skillList.map((skill) => (
+                  <SkillCard key={skill.id} {...skill} />
+                ))}
+              </div>
+            </section>
+          ))}
         </div>
       </ContainerWrapper>
     </section>

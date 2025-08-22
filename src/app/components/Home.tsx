@@ -12,25 +12,25 @@ import AboutContactSection from "./About/AboutContactSection";
 const Home = () => {
   return (
     <section className="flex w-full flex-col gap-3">
-      <div className="flex w-full lg:hidden">
-        <SocialLinks />
-      </div>
       {/* Top Section */}
       <ContainerWrapper className="relative flex-col gap-5">
-        <h1 className="text-4xl lg:text-[52px] font-extrabold">
-          Full Stack Solutions for Your Real-World Challenges.
+        <h1 className="text-3xl lg:text-[52px] font-extrabold">
+          Turning Code into Scalable, User-Focused Digital Products
         </h1>
         <Link href={"/contact"}>
           <Button
             className="lg:absolute bottom-5 right-5"
             rounded="rounded-full"
-            width="w-full lg:w-1/5"
+            width="w-full lg:w-1/4"
           >
-            Hire Me👋
+            Work With Me👋
           </Button>
         </Link>
       </ContainerWrapper>
 
+      <div className="flex w-full lg:hidden">
+        <SocialLinks />
+      </div>
       {/* Experience */}
       <Link href={"/experience"}>
         <ContainerWrapper className="flex-col gap-3">
@@ -46,11 +46,9 @@ const Home = () => {
             />
           </div>
           <p>
-            As a Full Stack Developer with around 2 years of experience, I aim
-            to enhance my skills in both frontend and backend technologies. I’m
-            eager to take on challenging projects, collaborate with teams, and
-            grow in a dynamic environment, ultimately progressing towards a
-            senior development role.
+            With 2 years of experience in the MERN stack, I’ve led teams,
+            architected subscription pipelines, and delivered production-ready
+            web and mobile apps. Explore my journey and the impact I’ve made.
           </p>
         </ContainerWrapper>
       </Link>
@@ -60,7 +58,7 @@ const Home = () => {
         <Link href={"/projects"}>
           <div className="flex w-full justify-between items-start">
             <p className="text-2xl lg:text-[32px] font-extrabold">
-              My Best <span className="text-primary-100">Creations</span>
+              Featured <span className="text-primary-100">Projects</span>
             </p>
             <Image
               src={"/icons/rightArrow.svg"}

@@ -53,10 +53,14 @@ const ExperienceSection = ({
         <h3 className="text-xl font-extrabold">Technologies used:</h3>
         <div className="grid lg:grid-cols-2 gap-3">
           {technologiesUsed?.map((item) => {
-            const skillDetails = Skills.find((sk) => sk.id === item);
+            const skillDetails = Object.values(Skills)
+              .flat()
+              .find((sk) => sk.id === item);
+
             return skillDetails && <SkillCard key={item} {...skillDetails} />;
           })}
         </div>
+
         <Link href={"/skills"} className="flex gap-3 font-semibold">
           All Skills{" "}
           <Image

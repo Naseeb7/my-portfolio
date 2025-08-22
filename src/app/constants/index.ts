@@ -31,7 +31,7 @@ export const sideMenuOptions = [
     href: "/experience",
   },
   {
-    label: "Creations",
+    label: "Featured Projects",
     href: "/projects",
   },
   {

@@ -5,16 +5,17 @@
     "startDate": "Sep 2023",
     "endDate": "Jul 2025",
     "experience": [
-      "Led a backend and Android team of 4 members, improving delivery timelines by 25%.",
-      "Developed and maintained production-ready features for web, mobile, backend, and admin panel.",
+      "Led and mentored a backend and Android team of 4 members, improving delivery timelines by 25%.",
+      "Developed and maintained production-ready features across web, mobile, backend, and admin panel.",
+      "Designed and implemented a seamless multi-step form flow on mobile and backend, reducing user drop-off rates by 18%.",
       "Spearheaded the subscription pipeline implementation, processing 10,000+ transactions monthly.",
       "Optimized backend APIs, reducing average response time from 1.2s to 450ms.",
-      "Collaborated cross-functionally with design, QA, and client teams to deliver projects on schedule."
+      "Collaborated with design, QA, and client teams to deliver high-quality releases ahead of schedule."
     ],
     "keyAchievements": [
-      "Promoted to team lead within 8 months of joining.",
-      "Awarded 'Employee of the Month' within first 3 months for outstanding performance.",
-      "Delivered a full-featured MVP 2 weeks ahead of schedule, enabling early client launch."
+      "Promoted to Team Lead within 8 months of joining for exceptional technical and leadership performance.",
+      "Recognized as 'Employee of the Month' within first 3 months for rapid impact delivery.",
+      "Successfully launched a fully functional MVP 2 weeks ahead of schedule, accelerating client’s go-to-market strategy."
     ],
     "awards": [
       "Employee of the Month - Dec 2023",
@@ -22,18 +23,18 @@
     ],
     "technologiesUsed": [
       "nextjs",
-      "reactnative",
+      "react-native",
+      "reactjs",
       "nodejs",
       "express",
       "mongodb",
       "typescript",
       "javascript",
-      "aws_s3",
+      "aws-s3-ec2",
       "redis",
-      "webrtc",
-      "websockets",
       "chakraui",
-      "tailwindcss"
+      "tailwindcss",
+      "git-github"
     ]
   }
 ]

@@ -11,7 +11,7 @@ const ProjectsPage = () => {
       <ContainerWrapper className="gap-8 flex-col">
         <div className="flex w-full justify-between items-center">
           <p className="text-[32px] font-extrabold">
-            My Best <span className="text-primary-100">Creations</span>
+            Featured <span className="text-primary-100">Projects</span>
           </p>
           <Link href={"/"}>
             <Image

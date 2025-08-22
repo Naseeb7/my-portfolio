@@ -6,10 +6,10 @@ import Image from "next/image";
 const AboutContactSection = () => {
   return (
     <Link href={"/contact"}>
-      <ContainerWrapper className=" flex-col gap-4">
+      <ContainerWrapper className="flex-col gap-3">
         <div className="flex text-2xl font-extrabold justify-between w-full items-center">
           <span>
-            <span className="text-primary-100">Connect</span> with me
+            Let’s <span className="text-primary-100">Collaborate</span>
           </span>
           <Image
             src={"/icons/rightArrow.svg"}
@@ -18,9 +18,7 @@ const AboutContactSection = () => {
             alt="Arrow"
           />
         </div>
-        <p>
-          Got a project in mind or just want to say hello? Let’s get in touch.
-        </p>
+        <p>Looking to collaborate or hire? I’m just a message away.</p>
       </ContainerWrapper>
     </Link>
   );
