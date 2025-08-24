@@ -10,7 +10,7 @@ export interface IProject {
     email: string;
     password: string;
   };
-  images: string[];
+  images?: string[];
 }
 
 export interface IExperience {

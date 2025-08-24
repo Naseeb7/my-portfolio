@@ -53,9 +53,9 @@ const ProjectSection = ({
         <p>{challenge}</p>
       </div>
 
-      <div className="grid lg:grid-cols-2 lg:grid-rows-2 gap-4 lg:h-[440px]">
-        {images && images.length > 0 ? (
-          images.slice(0, 3).map((photo, index) => (
+      {images && images.length > 0 && (
+        <div className="grid lg:grid-cols-2 lg:grid-rows-2 gap-4 lg:h-[440px]">
+          {images.slice(0, 3).map((photo, index) => (
             <div
               key={index}
               className={index === 0 ? "row-span-2 h-full" : "h-full"}
@@ -68,19 +68,9 @@ const ProjectSection = ({
                 height={440}
               />
             </div>
-          ))
-        ) : (
-          <div className="col-span-2">
-            <Image
-              src={"/projects/dummy-image.png"}
-              alt="No photos available"
-              className="h-full w-full object-cover rounded-4xl"
-              width={720}
-              height={440}
-            />
-          </div>
-        )}
-      </div>
+          ))}
+        </div>
+      )}
 
       <div className="flex flex-col gap-4">
         <h2 className="text-2xl lg:text-[32px] font-extrabold">
@@ -98,7 +88,7 @@ const ProjectSection = ({
         <Link
           href={previewLink}
           target="_blank"
-          className="text-primary-100 hover:underline"
+          className="text-primary-100 hover:underline truncate"
         >
           {previewLink}
         </Link>

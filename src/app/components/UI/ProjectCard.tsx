@@ -27,7 +27,9 @@ const ProjectCard = ({
         />
       </div>
 
-      {showName && <h4 className="text-xl font-extrabold">{name}</h4>}
+      {showName && (
+        <h4 className="text-xl font-extrabold truncate pr-5">{name}</h4>
+      )}
     </div>
   );
 };

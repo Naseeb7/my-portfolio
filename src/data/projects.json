@@ -1,52 +1,63 @@
 [
   {
-    "id": "1",
-    "name": "Project 1",
-    "overview": "A full-stack task management tool for remote teams.",
-    "heroImage": "/projects/dummy-image.png",
-    "challenge": "Building a responsive UI and real-time task syncing across users.",
+    "id": "coverdev",
+    "name": "CoverDev",
+    "overview": "An AI-powered tool that generates personalized cover letters instantly—just paste the job description.",
+    "heroImage": "/projects/coverdev/hero-section.webp",
+    "challenge": "Integrating AI language generation with a clean, intuitive UI while ensuring prompt and contextually accurate outputs.",
     "projectDetails": [
-      "Built using React, Node.js, and MongoDB",
-      "Implemented WebSocket for real-time updates",
-      "Deployed on Vercel and Render"
+      "Built with Nextjs and Tailwind CSS for a seamless user interface",
+      "Integrated AI-powered text generation (e.g., OpenAI API) for auto-generated cover letters",
+      "Ensured editable output with copy and download options",
+      "Deployed seamlessly on Vercel for fast, global access"
     ],
-    "previewLink": "https://example.com/project1",
-    "credentials": {
-      "email": "demo@example.com",
-      "password": "password123"
-    },
-    "images": ["/projects/dummy-image.png", "/projects/dummy-image.png"]
+    "previewLink": "https://coverdev.vercel.app/"
   },
   {
-    "id": "2",
-    "name": "Project 2",
-    "overview": "An e-commerce app with cart, payments, and admin dashboard.",
-    "heroImage": "/projects/dummy-image.png",
-    "challenge": "Handling complex checkout logic and admin analytics.",
+    "id": "justsocial",
+    "name": "JustSocial – Social Media Application",
+    "overview": "A comprehensive and fully responsive social media platform designed for seamless interaction, real-time communication, and community engagement. It allows users to create posts, like, comment, and manage connections while staying updated with instant notifications and chats. The platform also supports profile customization and secure account management, making it a complete modern social networking solution.",
+    "heroImage": "/projects/justsocial/hero-section.webp",
+    "challenge": "Building a seamless real-time social experience with chat, post interactions, dynamic friend management, and scalable architecture.",
     "projectDetails": [
-      "Used Next.js, Stripe, and Firebase",
-      "Implemented user authentication and admin role-based access",
-      "SEO optimized with server-side rendering"
+      "Built with MERN stack (MongoDB, Express.js, React.js, Node.js)",
+      "Implemented real-time chat and notifications using WebSockets",
+      "Enabled image and text posts with like, comment, and share features",
+      "Added friend management system including requests, removal, and connections",
+      "Profile customization and account details management",
+      "Fully responsive design with light/dark mode themes using Material-UI",
+      "Secure authentication and session handling"
     ],
-    "previewLink": "https://example.com/project2",
-    "images": ["/projects/dummy-image.png", "/projects/dummy-image.png"]
+    "previewLink": "https://astonishing-gelato-875bc7.netlify.app/home",
+    "credentials": {
+      "email": "test@test.com",
+      "password": "testtest"
+    },
+    "images": [
+      "/projects/justsocial/1.webp",
+      "/projects/justsocial/2.webp",
+      "/projects/justsocial/3.webp"
+    ]
   },
   {
-    "id": "3",
-    "name": "Project 3",
-    "overview": "A social media clone for sharing posts and messages.",
-    "heroImage": "/projects/dummy-image.png",
-    "challenge": "Building scalable features like chat and post feeds.",
+    "id": "isee",
+    "name": "iSee – Video Calling Application",
+    "overview": "A real-time video calling platform designed for instant connections with live chat and privacy-focused features. iSee enables users to start video calls instantly using a unique code without the hassle of account creation or software installation. With its clean, responsive interface and seamless chat integration, iSee provides a hassle-free and private communication experience.",
+    "heroImage": "/projects/isee/hero-section.webp",
+    "challenge": "Creating a fast, privacy-first video communication system with instant call initiation, live chat, and a seamless user experience.",
     "projectDetails": [
-      "Developed with React Native, Express, and MongoDB",
-      "Real-time chat using Socket.IO",
-      "Used Redux for state management"
+      "Developed using React.js for a dynamic and responsive front-end",
+      "Integrated WebRTC for real-time video calling with peer-to-peer communication",
+      "Implemented live chat functionality during calls using Socket.io",
+      "Enabled instant calls using unique session codes without requiring accounts or installations",
+      "Added customizable display names for enhanced privacy",
+      "Designed a user-friendly interface using Tailwind CSS for cross-device compatibility"
     ],
-    "previewLink": "https://example.com/project3",
-    "credentials": {
-      "email": "user@example.com",
-      "password": "userpass"
-    },
-    "images": ["/projects/dummy-image.png", "/projects/dummy-image.png"]
+    "previewLink": "https://fabulous-sundae-c611c5.netlify.app/",
+    "images": [
+      "/projects/isee/1.webp",
+      "/projects/isee/2.webp",
+      "/projects/isee/3.webp"
+    ]
   }
 ]
