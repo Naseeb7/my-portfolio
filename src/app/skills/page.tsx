@@ -1,8 +1,8 @@
 import React from "react";
-import ContainerWrapper from "../components/ContainerWrapper";
-import ClientBackButton from "../components/UI/ClientBackButton";
+import ContainerWrapper from "../../components/ContainerWrapper";
+import ClientBackButton from "../../components/UI/ClientBackButton";
 import Skills from "@/data/skills.json";
-import SkillCard from "../components/UI/SkillCard";
+import SkillCard from "../../components/UI/SkillCard";
 
 const SkillsPage = () => {
   return (

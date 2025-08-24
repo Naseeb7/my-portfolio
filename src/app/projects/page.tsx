@@ -1,9 +1,9 @@
 import React, { Suspense } from "react";
-import ContainerWrapper from "../components/ContainerWrapper";
+import ContainerWrapper from "../../components/ContainerWrapper";
 import Image from "next/image";
 import Projects from "@/data/projects.json";
 import Link from "next/link";
-import ProjectsGrid from "../components/ProjectsGrid";
+import ProjectsGrid from "../../components/ProjectsGrid";
 
 const ProjectsPage = () => {
   return (

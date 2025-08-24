@@ -1,6 +1,6 @@
 import Image from "next/image";
 import React from "react";
-import { IProject } from "@/app/constants/types";
+import { IProject } from "@/constants/types";
 
 const ProjectCard = ({
   heroImage,

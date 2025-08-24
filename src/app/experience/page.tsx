@@ -2,8 +2,8 @@ import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 import Experiences from "@/data/experience.json";
-import ExperienceSection from "../components/ExperienceSection";
-import ContainerWrapper from "../components/ContainerWrapper";
+import ExperienceSection from "../../components/ExperienceSection";
+import ContainerWrapper from "../../components/ContainerWrapper";
 
 const ExperiencePage = () => {
   return (

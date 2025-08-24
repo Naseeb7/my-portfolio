@@ -50,10 +50,7 @@ const ContactForm: React.FC = () => {
 
   return (
     <ContainerWrapper className="flex-col gap-5">
-      <label
-        htmlFor="contactForm"
-        className=" text-[32px] font-extrabold flex justify-between items-center"
-      >
+      <span className=" text-[32px] font-extrabold flex justify-between items-center">
         <span>
           Let&apos;s <span className="text-primary-100">Connect</span>
         </span>
@@ -71,11 +68,12 @@ const ContactForm: React.FC = () => {
             }
           }}
         />
-      </label>
+      </span>
       <form
         onSubmit={handleSubmit}
         className="flex gap-5 flex-col"
         name="contactForm"
+        id="contactForm"
       >
         <FormField
           name="name"
@@ -110,7 +108,7 @@ const ContactForm: React.FC = () => {
           value={form.message}
           onChange={handleChange}
           placeholder="Anything you want to say.."
-          rows={8}
+          rows={9}
           disabled={submitting}
           className="border border-secondary-300 px-3 py-4 outline-none text-secondary-400 font-medium placeholder:text-secondary-400 bg-secondary-200 rounded-xl resize-none"
         />

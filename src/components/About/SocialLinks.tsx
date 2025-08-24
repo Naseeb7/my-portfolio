@@ -1,7 +1,7 @@
 import React from "react";
 import ContainerWrapper from "../ContainerWrapper";
 import Image from "next/image";
-import { socials } from "@/app/constants";
+import { socials } from "@/constants";
 
 const SocialLinks = () => {
   return (
@@ -11,7 +11,7 @@ const SocialLinks = () => {
         height={336}
         width={332}
         className="h-[336px] w-full lg:w-1/2 flex rounded-xl object-contain"
-        alt="Pradosh"
+        alt="Pradosh Chand"
       />
       <div className="flex flex-col gap-3 w-full lg:w-1/2">
         <ContainerWrapper className="justify-between font-medium">
