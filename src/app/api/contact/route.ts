@@ -1,3 +1,5 @@
+import { connectDB } from "@/lib/mongodb";
+import { Contact } from "@/models/Contact";
 import { NextResponse } from "next/server";
 import nodemailer from "nodemailer";
 
@@ -11,6 +13,17 @@ export async function POST(req: Request) {
         { status: 400 }
       );
     }
+
+    // 1. Connect to MongoDB
+    await connectDB();
+
+    // 2. Store data in MongoDB
+    await Contact.create({
+      name,
+      email,
+      phone,
+      message,
+    });
 
     const transporter = nodemailer.createTransport({
       host: process.env.SMTP_HOST,
