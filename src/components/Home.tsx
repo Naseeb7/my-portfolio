@@ -8,10 +8,16 @@ import ProjectsGrid from "./ProjectsGrid";
 import SocialLinks from "./About/SocialLinks";
 import AboutSkillsSection from "./About/AboutSkillsSection";
 import AboutContactSection from "./About/AboutContactSection";
+import PersonSchema from "./SEO/PersonSchema";
+import ProjectSchema from "./SEO/ProjectSchema";
 
 const Home = () => {
   return (
     <section className="flex w-full flex-col gap-3">
+      {/* Structured Data */}
+      <PersonSchema />
+      <ProjectSchema projects={Projects} />
+      
       {/* Top Section */}
       <ContainerWrapper className="relative flex-col gap-5">
         <h1 className="text-3xl lg:text-[52px] font-extrabold">
@@ -35,14 +41,14 @@ const Home = () => {
       <Link href={"/experience"}>
         <ContainerWrapper className="flex-col gap-3">
           <div className="flex w-full justify-between items-start">
-            <p className="text-2xl lg:text-[32px] font-extrabold">
+            <h2 className="text-2xl lg:text-[32px] font-extrabold">
               Experience on <span className="text-primary-100">Full Stack</span>
-            </p>
+            </h2>
             <Image
               src={"/icons/rightArrow.svg"}
               height={24}
               width={24}
-              alt="Arrow"
+              alt="Right arrow icon to navigate to experience page"
             />
           </div>
           <p>
@@ -57,14 +63,14 @@ const Home = () => {
       <ContainerWrapper className="flex-col gap-3">
         <Link href={"/projects"}>
           <div className="flex w-full justify-between items-start">
-            <p className="text-2xl lg:text-[32px] font-extrabold">
+            <h2 className="text-2xl lg:text-[32px] font-extrabold">
               Featured <span className="text-primary-100">Projects</span>
-            </p>
+            </h2>
             <Image
               src={"/icons/rightArrow.svg"}
               height={24}
               width={24}
-              alt="Arrow"
+              alt="Right arrow icon to navigate to projects page"
             />
           </div>
         </Link>

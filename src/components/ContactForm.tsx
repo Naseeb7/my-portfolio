@@ -50,15 +50,15 @@ const ContactForm: React.FC = () => {
 
   return (
     <ContainerWrapper className="flex-col gap-5">
-      <span className=" text-[32px] font-extrabold flex justify-between items-center">
-        <span>
+      <header className="text-[32px] font-extrabold flex justify-between items-center">
+        <h1>
           Let&apos;s <span className="text-primary-100">Connect</span>
-        </span>
+        </h1>
         <Image
           src={"/icons/crossIcon.svg"}
           height={32}
           width={32}
-          alt="Cross"
+          alt="Close icon to return to homepage"
           className="hover:cursor-pointer"
           onClick={() => {
             if (window.history.length > 1) {
@@ -68,7 +68,7 @@ const ContactForm: React.FC = () => {
             }
           }}
         />
-      </span>
+      </header>
       <form
         onSubmit={handleSubmit}
         className="flex gap-5 flex-col"
@@ -103,7 +103,11 @@ const ContactForm: React.FC = () => {
           disabled={submitting}
         />
 
+        <label htmlFor="message" className="sr-only">
+          Your message
+        </label>
         <textarea
+          id="message"
           name="message"
           value={form.message}
           onChange={handleChange}
@@ -111,6 +115,7 @@ const ContactForm: React.FC = () => {
           rows={9}
           disabled={submitting}
           className="border border-secondary-300 px-3 py-4 outline-none text-secondary-400 font-medium placeholder:text-secondary-400 bg-secondary-200 rounded-xl resize-none"
+          aria-label="Your message"
         />
 
         <Button type="submit" className="py-4">

@@ -3,10 +3,50 @@ import ContainerWrapper from "../../components/ContainerWrapper";
 import ClientBackButton from "../../components/UI/ClientBackButton";
 import Skills from "@/data/skills.json";
 import SkillCard from "../../components/UI/SkillCard";
+import { Metadata } from "next";
+import BreadcrumbSchema from "@/components/SEO/BreadcrumbSchema";
+
+export const metadata: Metadata = {
+  title: "Technical Skills - Pradosh Chand Portfolio",
+  description: "Discover my technical proficiencies across Frontend Development, Mobile Development, Backend Development, Databases, and Cloud technologies.",
+  keywords: "Technical Skills, Developer Skills, Full Stack Developer, Web Development Skills, Mobile Development Skills, Programming Skills",
+  openGraph: {
+    title: "Technical Skills - Pradosh Chand Portfolio",
+    description: "Discover my technical proficiencies across Frontend Development, Mobile Development, Backend Development, Databases, and Cloud technologies.",
+    url: "https://your-portfolio-url.com/skills",
+    siteName: "Pradosh Chand Portfolio",
+    images: [
+      {
+        url: "/profile-image.webp",
+        width: 1200,
+        height: 630,
+        alt: "Pradosh Chand Technical Skills",
+      },
+    ],
+    locale: "en-US",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Technical Skills - Pradosh Chand Portfolio",
+    description: "Discover my technical proficiencies across Frontend Development, Mobile Development, Backend Development, Databases, and Cloud technologies.",
+    creator: "@pradoshchand", // Replace with your Twitter handle
+    images: ["/profile-image.webp"],
+  },
+};
 
 const SkillsPage = () => {
+  // Define breadcrumbs for skills page
+  const breadcrumbs = [
+    { name: "Home", url: "https://your-portfolio-url.com/" },
+    { name: "Skills", url: "https://your-portfolio-url.com/skills" }
+  ];
+
   return (
     <section>
+      {/* Structured Data */}
+      <BreadcrumbSchema breadcrumbs={breadcrumbs} />
+      
       <ContainerWrapper className="flex flex-col gap-8">
         <header className="flex w-full justify-between items-start lg:items-center">
           <h1 className="text-[32px] font-extrabold">

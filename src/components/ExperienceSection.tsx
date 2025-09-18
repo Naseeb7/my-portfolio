@@ -16,7 +16,7 @@ const ExperienceSection = ({
   awards,
 }: IExperience) => {
   return (
-    <div className="flex flex-col gap-6 w-full">
+    <article className="flex flex-col gap-6 w-full">
       <div className="flex flex-col gap-3">
         <h2 className="text-xl font-extrabold">
           {role} - {company}
@@ -67,11 +67,11 @@ const ExperienceSection = ({
             src={"/icons/rightArrow.svg"}
             height={16}
             width={16}
-            alt="Arrow"
+            alt="Right arrow icon to navigate to skills page"
           />
         </Link>
       </div>
-    </div>
+    </article>
   );
 };
 

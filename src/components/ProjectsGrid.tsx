@@ -56,6 +56,13 @@ export default function ProjectsGrid({
             key={project.id}
             onClick={() => openProject(project)}
             className="cursor-pointer"
+            role="button"
+            tabIndex={0}
+            onKeyDown={(e) => {
+              if (e.key === "Enter" || e.key === " ") {
+                openProject(project);
+              }
+            }}
           >
             <ProjectCard {...project} showName={showNames || isMobile} />
           </div>

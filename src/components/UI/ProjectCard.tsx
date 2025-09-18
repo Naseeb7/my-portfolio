@@ -9,7 +9,7 @@ const ProjectCard = ({
   showName = true,
 }: IProject & { showName?: boolean }) => {
   return (
-    <div
+    <article
       key={id}
       className="flex flex-col gap-3 hover:cursor-pointer w-full group"
     >
@@ -19,7 +19,7 @@ const ProjectCard = ({
         </div>
         <Image
           src={heroImage}
-          alt={name}
+          alt={`${name} project preview`}
           fill
           sizes="(max-width: 768px) 100vw, 33vw"
           className="rounded-2xl object-cover"
@@ -28,9 +28,9 @@ const ProjectCard = ({
       </div>
 
       {showName && (
-        <h4 className="text-xl font-extrabold truncate pr-5">{name}</h4>
+        <h3 className="text-xl font-extrabold truncate pr-5">{name}</h3>
       )}
-    </div>
+    </article>
   );
 };
 
