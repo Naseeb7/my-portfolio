@@ -1,12 +1,13 @@
 import React from "react";
+import { siteConfig } from "@/lib/seo";
 
 const PersonSchema = () => {
   const schemaData = {
     "@context": "https://schema.org",
     "@type": "Person",
     "name": "Pradosh Chand",
-    "url": "https://your-portfolio-url.com",
-    "image": "https://your-portfolio-url.com/profile-image.webp",
+    "url": siteConfig.url,
+    "image": `${siteConfig.url}${siteConfig.ogImage}`,
     "jobTitle": "Full Stack Developer",
     "worksFor": {
       "@type": "Organization",
@@ -17,7 +18,7 @@ const PersonSchema = () => {
       "https://www.linkedin.com/in/pradosh-chand-4b209027a/",
       "https://github.com/naseeb7"
     ],
-    "description": "Experienced Full Stack Developer skilled in Next.js, React Native, Node.js, and MongoDB. View my work, learn about my experience, and contact me for freelance or full-time opportunities."
+    "description": siteConfig.description
   };
 
   return (

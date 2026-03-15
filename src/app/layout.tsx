@@ -4,6 +4,7 @@ import "./globals.css";
 import AboutMe from "../components/AboutMe";
 import AnimatedPageWrapper from "../components/AnimatedPageWrapper";
 import AboutMeHeader from "../components/AboutMeHeader";
+import { siteConfig } from "@/lib/seo";
 
 const plusJakartaSans = Plus_Jakarta_Sans({
   subsets: ["latin"],
@@ -13,16 +14,26 @@ const plusJakartaSans = Plus_Jakarta_Sans({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL(siteConfig.url),
   title: {
-    default: "Pradosh Chand - Full Stack Developer Portfolio",
-    template: "%s | Pradosh Chand Portfolio",
+    default: siteConfig.title,
+    template: "%s | Pradosh Chand",
   },
-  description:
-    "Experienced Full Stack Developer skilled in Next.js, React Native, Node.js, and MongoDB. View my work, learn about my experience, and contact me for freelance or full-time opportunities",
-  keywords: "Full Stack Developer, Next.js, React Native, Node.js, MongoDB, Portfolio, Web Development, Mobile Development",
-  authors: [{ name: "Pradosh Chand" }],
-  creator: "Pradosh Chand",
-  publisher: "Pradosh Chand",
+  description: siteConfig.description,
+  keywords: [
+    "Pradosh Chand",
+    "Full Stack Developer",
+    "Next.js Developer",
+    "React Native Developer",
+    "Node.js Developer",
+    "MongoDB Developer",
+    "Portfolio",
+    "Web Development",
+    "Mobile Development",
+  ],
+  authors: [{ name: siteConfig.name, url: siteConfig.url }],
+  creator: siteConfig.name,
+  publisher: siteConfig.name,
   robots: {
     index: true,
     follow: true,
@@ -35,35 +46,30 @@ export const metadata: Metadata = {
     },
   },
   alternates: {
-    canonical: "/", // Relative URL for now
+    canonical: "/",
   },
   openGraph: {
     type: "website",
-    locale: "en_US",
-    url: "/", // Relative URL for now
-    title: "Pradosh Chand - Full Stack Developer Portfolio",
-    description:
-      "Experienced Full Stack Developer skilled in Next.js, React Native, Node.js, and MongoDB. View my work, learn about my experience, and contact me for freelance or full-time opportunities",
-    siteName: "Pradosh Chand Portfolio",
+    locale: siteConfig.locale,
+    url: siteConfig.url,
+    title: siteConfig.title,
+    description: siteConfig.description,
+    siteName: siteConfig.siteName,
     images: [
       {
-        url: "/profile-image.webp",
+        url: siteConfig.ogImage,
         width: 1200,
         height: 630,
-        alt: "Pradosh Chand Portfolio",
+        alt: siteConfig.title,
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Pradosh Chand - Full Stack Developer Portfolio",
-    description:
-      "Experienced Full Stack Developer skilled in Next.js, React Native, Node.js, and MongoDB.",
-    creator: "@pradoshchand", // Replace with your Twitter handle
-    images: ["/profile-image.webp"],
-  },
-  verification: {
-    google: "", // Add your Google Search Console verification code here when ready
+    title: siteConfig.title,
+    description: siteConfig.description,
+    creator: siteConfig.twitterHandle,
+    images: [siteConfig.ogImage],
   },
 };
 

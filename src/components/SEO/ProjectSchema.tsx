@@ -1,5 +1,6 @@
 import React from "react";
 import { IProject } from "@/constants/types";
+import { siteConfig } from "@/lib/seo";
 
 const ProjectSchema = ({ projects }: { projects: IProject[] }) => {
   const schemaData = {
@@ -11,7 +12,7 @@ const ProjectSchema = ({ projects }: { projects: IProject[] }) => {
       "name": project.name,
       "description": project.overview,
       "url": project.previewLink,
-      "image": `https://your-portfolio-url.com${project.heroImage}`
+      "image": `${siteConfig.url}${project.heroImage}`
     }))
   };
 

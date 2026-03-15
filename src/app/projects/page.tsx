@@ -7,41 +7,27 @@ import ProjectsGrid from "../../components/ProjectsGrid";
 import { Metadata } from "next";
 import ProjectSchema from "@/components/SEO/ProjectSchema";
 import BreadcrumbSchema from "@/components/SEO/BreadcrumbSchema";
+import { createPageMetadata, getAbsoluteUrl } from "@/lib/seo";
 
-export const metadata: Metadata = {
-  title: "Featured Projects - Pradosh Chand Portfolio",
-  description: "Explore my featured projects including CoverDev, JustSocial, and iSee. Full Stack Developer skilled in Next.js, React Native, Node.js, and MongoDB.",
-  keywords: "Web Development Projects, Mobile App Projects, Full Stack Projects, Portfolio Projects, Next.js Projects, React Native Projects, Node.js Projects",
-  openGraph: {
-    title: "Featured Projects - Pradosh Chand Portfolio",
-    description: "Explore my featured projects including CoverDev, JustSocial, and iSee. Full Stack Developer skilled in Next.js, React Native, Node.js, and MongoDB.",
-    url: "https://your-portfolio-url.com/projects",
-    siteName: "Pradosh Chand Portfolio",
-    images: [
-      {
-        url: "/projects/coverdev/hero-section.webp",
-        width: 1200,
-        height: 630,
-        alt: "Pradosh Chand Portfolio Projects",
-      },
-    ],
-    locale: "en-US",
-    type: "website",
-  },
-  twitter: {
-    card: "summary_large_image",
-    title: "Featured Projects - Pradosh Chand Portfolio",
-    description: "Explore my featured projects including CoverDev, JustSocial, and iSee.",
-    creator: "@pradoshchand", // Replace with your Twitter handle
-    images: ["/projects/coverdev/hero-section.webp"],
-  },
-};
+export const metadata: Metadata = createPageMetadata({
+  title: "Projects",
+  description:
+    "Browse selected web and mobile projects, including production work built with Next.js, React Native, Node.js, and MongoDB.",
+  path: "/projects",
+  image: "/projects/coverdev/hero-section.webp",
+  keywords: [
+    "Pradosh Chand projects",
+    "Full Stack Developer portfolio projects",
+    "Next.js projects",
+    "React Native projects",
+  ],
+});
 
 const ProjectsPage = () => {
   // Define breadcrumbs for projects page
   const breadcrumbs = [
-    { name: "Home", url: "https://your-portfolio-url.com/" },
-    { name: "Projects", url: "https://your-portfolio-url.com/projects" }
+    { name: "Home", url: getAbsoluteUrl("/") },
+    { name: "Projects", url: getAbsoluteUrl("/projects") }
   ];
 
   return (
