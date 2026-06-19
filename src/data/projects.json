@@ -1,5 +1,28 @@
 [
   {
+    "id": "nakama-tictactoe",
+    "name": "Authoritative Multiplayer Tic-Tac-Toe",
+    "overview": "A real-time multiplayer Tic-Tac-Toe game built using Nakama's authoritative server architecture. The project demonstrates server-authoritative game logic, matchmaking, real-time state synchronization, and scalable multiplayer backend development. Players can create or join matches and compete in a synchronized environment where all game rules are validated and executed on the server.",
+    "heroImage": "/projects/nakama-tictactoe/hero-section.webp",
+    "challenge": "Designing an authoritative multiplayer architecture where all game logic is executed on the server while maintaining real-time synchronization, fairness, and low-latency gameplay.",
+    "projectDetails": [
+      "Built authoritative multiplayer gameplay using Nakama server",
+      "Implemented server-side game logic and move validation",
+      "Created real-time match state synchronization between players",
+      "Developed matchmaking and match lifecycle management",
+      "Integrated React frontend with Nakama client SDK",
+      "Handled player joins, disconnects, reconnections, and match completion",
+      "Designed scalable multiplayer architecture following industry-standard game server practices"
+    ],
+    "previewLink": "https://nakama-authoritative-tictactoe.vercel.app/",
+    "githubLink": "https://github.com/Naseeb7/nakama-authoritative-tictactoe",
+    "images": [
+      "/projects/nakama-tictactoe/1.webp",
+      "/projects/nakama-tictactoe/2.webp",
+      "/projects/nakama-tictactoe/3.webp"
+    ]
+  },
+  {
     "id": "coverdev",
     "name": "CoverDev",
     "overview": "An AI-powered tool that generates personalized cover letters instantly—just paste the job description.",

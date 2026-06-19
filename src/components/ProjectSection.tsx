@@ -12,6 +12,7 @@ const ProjectSection = ({
   images,
   name,
   overview,
+  githubLink,
   previewLink,
   projectDetails,
   onClose,
@@ -84,14 +85,33 @@ const ProjectSection = ({
       </div>
 
       <div className="flex flex-col gap-4">
-        <h2 className="text-2xl lg:text-[32px] font-extrabold">Live Preview</h2>
-        <Link
-          href={previewLink}
-          target="_blank"
-          className="text-primary-100 hover:underline truncate"
-        >
-          {previewLink}
-        </Link>
+        <h2 className="text-2xl lg:text-[32px] font-extrabold">Live Links</h2>
+        <div className="flex flex-col gap-4">
+          <div className="flex flex-col gap-1">
+            <span className="text-lg font-semibold">Live Preview</span>
+            <Link
+              href={previewLink}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-primary-100 hover:underline break-all"
+            >
+              {previewLink}
+            </Link>
+          </div>
+          {githubLink && (
+            <div className="flex flex-col gap-1">
+              <span className="text-lg font-semibold">GitHub Repository</span>
+              <Link
+                href={githubLink}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-primary-100 hover:underline break-all"
+              >
+                {githubLink}
+              </Link>
+            </div>
+          )}
+        </div>
         {credentials && (
           <div className="flex flex-col gap-3 ">
             <span className="text-2xl font-bold">Credentials</span>
