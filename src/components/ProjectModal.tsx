@@ -41,9 +41,9 @@ export default function ProjectModal({
           animate={{ opacity: 1, y: 0 }}
           exit={{ opacity: 0, y: "100%" }}
           transition={{ duration: 0.4 }}
-          className="fixed inset-0 z-50 w-full p-3 lg:p-10 flex bg-background"
+          className="fixed inset-0 z-50 w-full p-3 lg:p-10 flex bg-background justify-center"
         >
-          <ContainerWrapper className="max-h-screen overflow-y-auto">
+          <ContainerWrapper className="max-h-screen overflow-y-auto max-w-[1440px]">
             <ProjectSection {...project} onClose={onClose} />
           </ContainerWrapper>
         </motion.div>

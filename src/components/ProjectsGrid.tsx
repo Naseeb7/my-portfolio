@@ -50,7 +50,7 @@ export default function ProjectsGrid({
 
   return (
     <>
-      <div className={`grid gap-x-3 gap-y-6 ${className}`}>
+      <div className={`grid gap-x-3 gap-y-6 grid-cols-1 ${className}`}>
         {projects.map((project) => (
           <div
             key={project.id}

@@ -17,11 +17,12 @@ const Home = () => {
       {/* Structured Data */}
       <PersonSchema />
       <ProjectSchema projects={Projects} />
-      
+
       {/* Top Section */}
       <ContainerWrapper className="relative flex-col gap-5">
         <h1 className="text-3xl lg:text-[52px] font-extrabold">
-          Turning code into scalable, user-focused products — built for 30,000+ users
+          Turning code into scalable, user-focused products — built for 30,000+
+          users
         </h1>
         <Link href={"/contact"}>
           <Button
@@ -51,7 +52,12 @@ const Home = () => {
               alt="Right arrow icon to navigate to experience page"
             />
           </div>
-          <p>With 2 years of MERN experience, I’ve led backend and mobile teams, architected and implemented subscription pipelines, and shipped production-ready web and mobile apps that now serve 30,000+ users. I focus on scalable architectures, measurable outcomes, and code that lasts.
+          <p>
+            With 2 years of MERN experience, I’ve led backend and mobile teams,
+            architected and implemented subscription pipelines, and shipped
+            production-ready web and mobile apps that now serve 30,000+ users. I
+            focus on scalable architectures, measurable outcomes, and code that
+            lasts.
           </p>
         </ContainerWrapper>
       </Link>

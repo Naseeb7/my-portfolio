@@ -1,7 +1,7 @@
 export const socials = [
   {
     name: "LinkedIn",
-    url: "https://www.linkedin.com/in/pradosh-chand-4b209027a/",
+    url: "https://www.linkedin.com/in/pradosh-chand/",
     icon: "/icons/linkedin.svg",
   },
   {

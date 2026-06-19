@@ -27,7 +27,7 @@ const ProjectsPage = () => {
   // Define breadcrumbs for projects page
   const breadcrumbs = [
     { name: "Home", url: getAbsoluteUrl("/") },
-    { name: "Projects", url: getAbsoluteUrl("/projects") }
+    { name: "Projects", url: getAbsoluteUrl("/projects") },
   ];
 
   return (
@@ -35,7 +35,7 @@ const ProjectsPage = () => {
       {/* Structured Data */}
       <ProjectSchema projects={Projects} />
       <BreadcrumbSchema breadcrumbs={breadcrumbs} />
-      
+
       <ContainerWrapper className="gap-8 flex-col">
         <div className="flex w-full justify-between items-center">
           <p className="text-[32px] font-extrabold">
