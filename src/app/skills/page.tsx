@@ -10,13 +10,16 @@ import { createPageMetadata, getAbsoluteUrl } from "@/lib/seo";
 export const metadata: Metadata = createPageMetadata({
   title: "Skills",
   description:
-    "Review my technical skills across frontend, backend, mobile, database, and cloud development.",
+    "Explore the technologies, tools, and engineering capabilities I use to design, build, and ship production-ready web, mobile, and backend systems.",
   path: "/skills",
   keywords: [
-    "Pradosh Chand skills",
-    "Full Stack Developer skills",
-    "Frontend Developer skills",
-    "Backend Developer skills",
+    "Pradosh Chand",
+    "Frontend Product Engineer",
+    "React",
+    "Next.js",
+    "TypeScript",
+    "Node.js",
+    "Product Engineering",
   ],
 });
 
@@ -24,25 +27,27 @@ const SkillsPage = () => {
   // Define breadcrumbs for skills page
   const breadcrumbs = [
     { name: "Home", url: getAbsoluteUrl("/") },
-    { name: "Skills", url: getAbsoluteUrl("/skills") }
+    { name: "Skills", url: getAbsoluteUrl("/skills") },
   ];
 
   return (
     <section>
       {/* Structured Data */}
       <BreadcrumbSchema breadcrumbs={breadcrumbs} />
-      
+
       <ContainerWrapper className="flex flex-col gap-8">
         <header className="flex w-full justify-between items-start lg:items-center">
           <h1 className="text-[32px] font-extrabold">
-            Technical <span className="text-primary-100">Proficiencies</span>
+            Engineering <span className="text-primary-100">Capabilities</span>
           </h1>
           <ClientBackButton />
         </header>
 
         <div className="flex flex-col gap-6">
           <p>
-            Comprehensive expertise across web, mobile, and cloud technologies.
+            A production-focused engineering stack spanning frontend, mobile,
+            backend, cloud, and realtime systems—selected to build scalable,
+            maintainable products from architecture to production.
           </p>
           {Object.entries(Skills).map(([category, skillList]) => (
             <section key={category} className="flex flex-col gap-4">
