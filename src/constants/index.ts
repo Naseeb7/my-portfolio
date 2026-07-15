@@ -27,7 +27,7 @@ export const sideMenuOptions = [
     href: "/",
   },
   {
-    label: "Experience",
+    label: "Engineering Experience",
     href: "/experience",
   },
   {
@@ -35,16 +35,11 @@ export const sideMenuOptions = [
     href: "/projects",
   },
   {
-    label: "Skills",
+    label: "Engineering Capabilities",
     href: "/skills",
   },
   {
     label: "Contact",
     href: "/contact",
-  },
-  {
-    label: "Coverdev",
-    href: "https://coverdev.vercel.app/",
-    external: true,
   },
 ];

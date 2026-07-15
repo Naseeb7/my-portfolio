@@ -50,22 +50,11 @@ const SideMenu = ({ onClose, isOpen }: SideMenuProps) => {
                 className="rounded-full object-cover"
                 alt="Pradosh"
               />
-              {sideMenuOptions.map((option) =>
-                option.external ? (
-                  <a
-                    key={option.label}
-                    href={option.href}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    {option.label}
-                  </a>
-                ) : (
-                  <Link key={option.label} href={option.href} onClick={onClose}>
-                    {option.label}
-                  </Link>
-                )
-              )}
+              {sideMenuOptions.map((option) => (
+                <Link key={option.label} href={option.href} onClick={onClose}>
+                  {option.label}
+                </Link>
+              ))}
             </div>
           </motion.div>
         </motion.div>
