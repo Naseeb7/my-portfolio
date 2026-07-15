@@ -7,10 +7,10 @@ export async function POST(req: Request) {
   try {
     const { name, email, phone, message } = await req.json();
 
-    if (!name || !email || !phone) {
+    if (!name || !email) {
       return NextResponse.json(
         { error: "Missing required fields" },
-        { status: 400 }
+        { status: 400 },
       );
     }
 
@@ -47,7 +47,7 @@ export async function POST(req: Request) {
     console.log("Error in contact submission:", error);
     return NextResponse.json(
       { error: "Failed to submit contact form" },
-      { status: 500 }
+      { status: 500 },
     );
   }
 }
