@@ -1,26 +1,24 @@
 [
   {
-    "role": "Full Stack Developer & Team Lead",
+    "role": "Software Developer (Promoted to Team Lead)",
     "company": "Hexadecimal Software Pvt Ltd",
     "startDate": "Sep 2023",
     "endDate": "Jul 2025",
     "experience": [
-      "Led and mentored a backend and Android team of 4 members, improving delivery timelines by 25%.",
-      "Developed and maintained production-ready features across web, mobile, backend, and admin panel.",
-      "Designed and implemented a seamless multi-step form flow on mobile and backend, reducing user drop-off rates by 18%.",
-      "Spearheaded the subscription pipeline implementation, processing 10,000+ transactions monthly.",
-      "Optimized backend APIs, reducing average response time from 1.2s to 450ms.",
-      "Collaborated with design, QA, and client teams to deliver high-quality releases ahead of schedule."
+      "Progressively assumed ownership of the company's React web application, React Native mobile application, and Node.js backend, delivering customer-facing features from technical design through production deployment as engineering responsibilities expanded.",
+      "Re-architected the React Native application by redesigning navigation, application hierarchy, and code organization, improving maintainability and enabling the product to scale with evolving business requirements.",
+      "Architected reusable backend services supporting authentication, property search, AI-assisted content generation, and dynamic workflows.",
+      "Engineered a cross-platform URL parsing framework enabling seamless deep linking between web and mobile applications.",
+      "Delivered business-critical capabilities including payment integrations (Razorpay), save-and-resume workflows, onboarding experiences, real-time application features, and AI-assisted property description generation using OpenAI APIs.",
+      "Owned production engineering across web and mobile, managing production deployments, Android and iOS releases, emergency hotfixes, incident resolution, and application stability in live environments.",
+      "Collaborated closely with product, design, QA, and leadership while mentoring interns, supporting technical knowledge sharing, and taking on progressively greater technical ownership across the engineering organization."
     ],
     "keyAchievements": [
-      "Promoted to Team Lead within 8 months of joining for exceptional technical and leadership performance.",
-      "Recognized as 'Employee of the Month' within first 3 months for rapid impact delivery.",
-      "Successfully launched a fully functional MVP 2 weeks ahead of schedule, accelerating client’s go-to-market strategy."
+      "Progressively assumed ownership across frontend, mobile, and backend systems, becoming a primary engineering contributor as responsibilities expanded.",
+      "Designed architecture that enabled future product expansion instead of short-term feature implementation.",
+      "Led production deployments, release management, and incident resolution across customer-facing applications."
     ],
-    "awards": [
-      "Employee of the Month - Dec 2023",
-      "Best Team Collaboration - Mar 2024"
-    ],
+    "awards": ["Employee of the Month - Dec 2023"],
     "technologiesUsed": [
       "nextjs",
       "react-native",

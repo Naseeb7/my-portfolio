@@ -11,13 +11,15 @@ import { createPageMetadata, getAbsoluteUrl } from "@/lib/seo";
 export const metadata: Metadata = createPageMetadata({
   title: "Experience",
   description:
-    "Explore my work experience building web and mobile products, leading backend and app delivery, and shipping features used in production.",
+    "Explore my experience owning frontend architecture, production web and mobile applications, backend systems, and engineering delivery across fast-paced startup environments.",
   path: "/experience",
   keywords: [
-    "Pradosh Chand experience",
-    "Full Stack Developer experience",
-    "Software Engineer portfolio",
-    "Next.js Developer",
+    "Pradosh Chand",
+    "Frontend Product Engineer",
+    "React Developer",
+    "Next.js Engineer",
+    "Product Engineer",
+    "Software Engineer Portfolio",
   ],
 });
 
@@ -25,18 +27,18 @@ const ExperiencePage = () => {
   // Define breadcrumbs for experience page
   const breadcrumbs = [
     { name: "Home", url: getAbsoluteUrl("/") },
-    { name: "Experience", url: getAbsoluteUrl("/experience") }
+    { name: "Experience", url: getAbsoluteUrl("/experience") },
   ];
 
   return (
     <section>
       {/* Structured Data */}
       <BreadcrumbSchema breadcrumbs={breadcrumbs} />
-      
+
       <ContainerWrapper className="flex-col gap-8">
         <div className="flex w-full justify-between lg:items-center">
           <h1 className="text-[32px] font-extrabold">
-            Experience on <span className="text-primary-100">Full Stack</span>
+            Engineering <span className="text-primary-100">Experience</span>
           </h1>
           <Link href={"/"}>
             <Image

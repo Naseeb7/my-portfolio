@@ -32,7 +32,7 @@ const ExperienceSection = ({
       </ul>
 
       <div className="flex flex-col gap-4">
-        <h3 className="text-xl font-extrabold">Key Achievements:</h3>
+        <h3 className="text-xl font-extrabold">Engineering Highlights:</h3>
         <ul className="list-disc pl-5 space-y-4">
           {keyAchievements?.map((item, index) => {
             return <li key={`${index}_experience`}>{item}</li>;
@@ -41,7 +41,7 @@ const ExperienceSection = ({
       </div>
       {awards && (
         <div className="flex flex-col gap-4">
-          <h3 className="text-xl font-extrabold">Awards:</h3>
+          <h3 className="text-xl font-extrabold">Recognition & Awards:</h3>
           <ul className="list-disc pl-5 space-y-4">
             {awards?.map((item, index) => {
               return <li key={`${index}_experience`}>{item}</li>;
@@ -50,7 +50,7 @@ const ExperienceSection = ({
         </div>
       )}
       <div className="flex flex-col gap-4">
-        <h3 className="text-xl font-extrabold">Technologies used:</h3>
+        <h3 className="text-xl font-extrabold">Technologies:</h3>
         <div className="grid lg:grid-cols-2 gap-3">
           {technologiesUsed?.map((item) => {
             const skillDetails = Object.values(Skills)
@@ -62,7 +62,7 @@ const ExperienceSection = ({
         </div>
 
         <Link href={"/skills"} className="flex gap-3 font-semibold">
-          All Skills{" "}
+          View All Skills{" "}
           <Image
             src={"/icons/rightArrow.svg"}
             height={16}
