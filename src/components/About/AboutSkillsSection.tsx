@@ -18,8 +18,8 @@ const AboutSkillsSection = () => {
           />
         </div>
         <p className="font-medium w-full">
-          React, Node.js, TypeScript, MongoDB, AWS & scalable full-stack
-          expertise
+          Frontend engineering, product ownership, scalable architecture, and
+          production-ready systems.
         </p>
       </ContainerWrapper>
     </Link>

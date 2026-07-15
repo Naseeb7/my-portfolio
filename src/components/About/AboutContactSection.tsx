@@ -18,7 +18,10 @@ const AboutContactSection = () => {
             alt="Arrow"
           />
         </div>
-        <p>Looking to collaborate or hire? I’m just a message away.</p>
+        <p>
+          Building a product, scaling a team, or solving a complex engineering
+          problem? Let&apos;s talk.
+        </p>
       </ContainerWrapper>
     </Link>
   );
