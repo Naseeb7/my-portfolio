@@ -12,14 +12,17 @@ import { createPageMetadata, getAbsoluteUrl } from "@/lib/seo";
 export const metadata: Metadata = createPageMetadata({
   title: "Projects",
   description:
-    "Browse selected web and mobile projects, including production work built with Next.js, React Native, Node.js, and MongoDB.",
+    "Explore engineering projects showcasing frontend architecture, realtime systems, backend engineering, product ownership, and production-ready applications.",
   path: "/projects",
   image: "/projects/coverdev/hero-section.webp",
   keywords: [
-    "Pradosh Chand projects",
-    "Full Stack Developer portfolio projects",
-    "Next.js projects",
-    "React Native projects",
+    "Pradosh Chand",
+    "Frontend Product Engineer",
+    "Engineering Portfolio",
+    "Next.js Projects",
+    "React Projects",
+    "Realtime Systems",
+    "System Design",
   ],
 });
 
@@ -50,7 +53,7 @@ const ProjectsPage = () => {
             />
           </Link>
         </div>
-        <Suspense fallback={<div>Loading projects...</div>}>
+        <Suspense fallback={<div>Loading engineering projects...</div>}>
           <ProjectsGrid projects={Projects} className="lg:grid-cols-2" />
         </Suspense>
       </ContainerWrapper>

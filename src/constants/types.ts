@@ -5,7 +5,7 @@ export interface IProject {
   heroImage: string;
   challenge: string;
   projectDetails: string[];
-  previewLink: string;
+  previewLink?: string;
   githubLink?: string;
   credentials?: {
     email: string;

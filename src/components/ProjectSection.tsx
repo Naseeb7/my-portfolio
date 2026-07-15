@@ -45,12 +45,16 @@ const ProjectSection = ({
       />
 
       <div className="flex flex-col gap-4">
-        <h2 className="text-2xl lg:text-[32px] font-extrabold">Overview</h2>
+        <h2 className="text-2xl lg:text-[32px] font-extrabold">
+          Project Overview
+        </h2>
         <p>{overview}</p>
       </div>
 
       <div className="flex flex-col gap-4">
-        <h2 className="text-2xl lg:text-[32px] font-extrabold">Challenge</h2>
+        <h2 className="text-2xl lg:text-[32px] font-extrabold">
+          Engineering Challenge
+        </h2>
         <p>{challenge}</p>
       </div>
 
@@ -75,7 +79,7 @@ const ProjectSection = ({
 
       <div className="flex flex-col gap-4">
         <h2 className="text-2xl lg:text-[32px] font-extrabold">
-          Project Details
+          Engineering Highlights
         </h2>
         <ul className="list-disc pl-5">
           {projectDetails.map((detail, index) => (
@@ -85,18 +89,26 @@ const ProjectSection = ({
       </div>
 
       <div className="flex flex-col gap-4">
-        <h2 className="text-2xl lg:text-[32px] font-extrabold">Live Links</h2>
+        <h2 className="text-2xl lg:text-[32px] font-extrabold">
+          Explore the Project
+        </h2>
         <div className="flex flex-col gap-4">
           <div className="flex flex-col gap-1">
             <span className="text-lg font-semibold">Live Preview</span>
-            <Link
-              href={previewLink}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-primary-100 hover:underline break-all"
-            >
-              {previewLink}
-            </Link>
+            {previewLink ? (
+              <Link
+                href={previewLink}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-primary-100 hover:underline break-all"
+              >
+                {previewLink}
+              </Link>
+            ) : (
+              <p className="text-primary-100 hover:underline break-all">
+                Professional project — public preview unavailable.
+              </p>
+            )}
           </div>
           {githubLink && (
             <div className="flex flex-col gap-1">
@@ -129,7 +141,7 @@ const ProjectSection = ({
 
       <div className="flex flex-col gap-5 lg:gap-10">
         <span className="flex justify-center w-full font-extrabold">
-          Need to Know More about the Projects?
+          Interested in how I approach engineering challenges?
         </span>
         <div className="flex w-full items-center justify-center lg:justify-normal">
           <div className="hidden lg:block h-[1px] bg-gradient-to-r from-brand-200 to-white/50 w-1/2" />

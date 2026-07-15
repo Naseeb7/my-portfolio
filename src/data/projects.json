@@ -1,18 +1,34 @@
 [
   {
+    "id": "gatsby-blog-platform",
+    "name": "Gatsby Blog Platform",
+    "overview": "Designed and built a production publishing platform for HexaHome that enabled non-technical teams to create, manage, and publish SEO-optimized content independently. The platform streamlined editorial workflows, improved developer experience through automation, and became a major acquisition channel, contributing 70% of the company's website traffic through organic search.",
+    "heroImage": "/projects/gatsby/hero-section.webp",
+    "challenge": "Building a scalable publishing platform that balanced editor usability, developer workflows, SEO optimization, and deployment automation while supporting long-term content growth without increasing engineering overhead.",
+    "projectDetails": [
+      "Architected and developed a Gatsby-based publishing platform from the ground up.",
+      "Designed a custom Markdown editor with autosave to improve the editorial workflow.",
+      "Engineered a Git-based publishing pipeline enabling structured content management and version control.",
+      "Optimized static generation, image processing, caching, and build performance for fast page delivery.",
+      "Implemented SEO-focused architecture to improve indexing, discoverability, and organic search visibility.",
+      "Automated deployment workflows to simplify publishing and reduce operational overhead.",
+      "Contributed to 70% of the company's website traffic through improved organic search performance."
+    ]
+  },
+  {
     "id": "nakama-tictactoe",
     "name": "Authoritative Multiplayer Tic-Tac-Toe",
-    "overview": "A real-time multiplayer Tic-Tac-Toe game built using Nakama's authoritative server architecture. The project demonstrates server-authoritative game logic, matchmaking, real-time state synchronization, and scalable multiplayer backend development. Players can create or join matches and compete in a synchronized environment where all game rules are validated and executed on the server.",
+    "overview": "Built a server-authoritative multiplayer game using Nakama to explore distributed systems, authoritative game servers, and realtime synchronization. Every gameplay action is validated on the server, ensuring fair gameplay while maintaining a responsive multiplayer experience.",
     "heroImage": "/projects/nakama-tictactoe/hero-section.webp",
-    "challenge": "Designing an authoritative multiplayer architecture where all game logic is executed on the server while maintaining real-time synchronization, fairness, and low-latency gameplay.",
+    "challenge": "Designing a server-authoritative multiplayer architecture that maintained realtime synchronization, handled unreliable network conditions, and ensured gameplay integrity without sacrificing responsiveness.",
     "projectDetails": [
-      "Built authoritative multiplayer gameplay using Nakama server",
-      "Implemented server-side game logic and move validation",
-      "Created real-time match state synchronization between players",
-      "Developed matchmaking and match lifecycle management",
-      "Integrated React frontend with Nakama client SDK",
-      "Handled player joins, disconnects, reconnections, and match completion",
-      "Designed scalable multiplayer architecture following industry-standard game server practices"
+      "Engineered server-authoritative gameplay with all game logic executed and validated on the Nakama server.",
+      "Implemented matchmaking, match lifecycle management, and realtime state synchronization.",
+      "Designed reliable player connection handling including joins, disconnects, reconnections, and match recovery.",
+      "Integrated the React frontend with the Nakama client SDK for seamless multiplayer interactions.",
+      "Implemented deterministic move validation to prevent invalid or conflicting game states.",
+      "Containerized and deployed the backend using Docker while leveraging Railway for hosting.",
+      "Designed a scalable multiplayer architecture following modern distributed game server practices."
     ],
     "previewLink": "https://nakama-authoritative-tictactoe.vercel.app/",
     "githubLink": "https://github.com/Naseeb7/nakama-authoritative-tictactoe",
@@ -23,33 +39,40 @@
     ]
   },
   {
-    "id": "coverdev",
-    "name": "CoverDev",
-    "overview": "An AI-powered tool that generates personalized cover letters instantly—just paste the job description.",
-    "heroImage": "/projects/coverdev/hero-section.webp",
-    "challenge": "Integrating AI language generation with a clean, intuitive UI while ensuring prompt and contextually accurate outputs.",
+    "id": "isee",
+    "name": "iSee – Video Calling Platform",
+    "overview": "Developed a realtime peer-to-peer communication platform focused on instant collaboration without requiring user registration. The application demonstrates realtime media streaming, signaling, session management, and responsive communication workflows.",
+    "heroImage": "/projects/isee/hero-section.webp",
+    "challenge": "Building a reliable realtime communication platform that simplified peer connection setup while maintaining low-latency video streaming, session stability, and a frictionless user experience.",
     "projectDetails": [
-      "Built with Nextjs and Tailwind CSS for a seamless user interface",
-      "Integrated AI-powered text generation (e.g., OpenAI API) for auto-generated cover letters",
-      "Ensured editable output with copy and download options",
-      "Deployed seamlessly on Vercel for fast, global access"
+      "Built realtime peer-to-peer video communication using WebRTC.",
+      "Implemented Socket.io signaling for session negotiation and connection management.",
+      "Designed instant room creation and unique session codes without requiring user accounts.",
+      "Developed integrated realtime messaging alongside live video communication.",
+      "Implemented connection lifecycle handling to improve session stability and user experience.",
+      "Built a responsive interface optimized for desktop and mobile devices using React and Tailwind CSS."
     ],
-    "previewLink": "https://coverdev.vercel.app/"
+    "previewLink": "https://fabulous-sundae-c611c5.netlify.app/",
+    "images": [
+      "/projects/isee/1.webp",
+      "/projects/isee/2.webp",
+      "/projects/isee/3.webp"
+    ]
   },
   {
     "id": "justsocial",
-    "name": "JustSocial – Social Media Application",
-    "overview": "A comprehensive and fully responsive social media platform designed for seamless interaction, real-time communication, and community engagement. It allows users to create posts, like, comment, and manage connections while staying updated with instant notifications and chats. The platform also supports profile customization and secure account management, making it a complete modern social networking solution.",
+    "name": "JustSocial – Social Media Platform",
+    "overview": "Built a full-stack social networking platform supporting realtime communication, content sharing, profile management, and community engagement. The project demonstrates end-to-end product engineering across frontend, backend, authentication, and realtime systems.",
     "heroImage": "/projects/justsocial/hero-section.webp",
-    "challenge": "Building a seamless real-time social experience with chat, post interactions, dynamic friend management, and scalable architecture.",
+    "challenge": "Designing a scalable social platform that combined realtime messaging, dynamic content feeds, user relationships, and secure authentication into a cohesive product experience.",
     "projectDetails": [
-      "Built with MERN stack (MongoDB, Express.js, React.js, Node.js)",
-      "Implemented real-time chat and notifications using WebSockets",
-      "Enabled image and text posts with like, comment, and share features",
-      "Added friend management system including requests, removal, and connections",
-      "Profile customization and account details management",
-      "Fully responsive design with light/dark mode themes using Material-UI",
-      "Secure authentication and session handling"
+      "Engineered a production-style full-stack application using React, Node.js, Express.js, and MongoDB.",
+      "Implemented realtime messaging and notifications using WebSockets.",
+      "Built dynamic content feeds supporting posts, comments, likes, and user interactions.",
+      "Designed user relationship management including friend requests, connections, and profile management.",
+      "Implemented authentication, authorization, and secure session handling.",
+      "Developed responsive, accessible user interfaces with Material UI across desktop and mobile devices.",
+      "Structured the application to support scalable feature development and maintainable code organization."
     ],
     "previewLink": "https://astonishing-gelato-875bc7.netlify.app/home",
     "credentials": {
@@ -60,27 +83,6 @@
       "/projects/justsocial/1.webp",
       "/projects/justsocial/2.webp",
       "/projects/justsocial/3.webp"
-    ]
-  },
-  {
-    "id": "isee",
-    "name": "iSee – Video Calling Application",
-    "overview": "A real-time video calling platform designed for instant connections with live chat and privacy-focused features. iSee enables users to start video calls instantly using a unique code without the hassle of account creation or software installation. With its clean, responsive interface and seamless chat integration, iSee provides a hassle-free and private communication experience.",
-    "heroImage": "/projects/isee/hero-section.webp",
-    "challenge": "Creating a fast, privacy-first video communication system with instant call initiation, live chat, and a seamless user experience.",
-    "projectDetails": [
-      "Developed using React.js for a dynamic and responsive front-end",
-      "Integrated WebRTC for real-time video calling with peer-to-peer communication",
-      "Implemented live chat functionality during calls using Socket.io",
-      "Enabled instant calls using unique session codes without requiring accounts or installations",
-      "Added customizable display names for enhanced privacy",
-      "Designed a user-friendly interface using Tailwind CSS for cross-device compatibility"
-    ],
-    "previewLink": "https://fabulous-sundae-c611c5.netlify.app/",
-    "images": [
-      "/projects/isee/1.webp",
-      "/projects/isee/2.webp",
-      "/projects/isee/3.webp"
     ]
   }
 ]
