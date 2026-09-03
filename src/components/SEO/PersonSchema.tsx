@@ -6,15 +6,16 @@ const PersonSchema = () => {
     "@context": "https://schema.org",
     "@type": "Person",
     "@id": `${siteConfig.url}#person`,
-    "name": siteConfig.name,
-    "url": siteConfig.url,
-    "image": `${siteConfig.url}${siteConfig.ogImage}`,
-    "jobTitle": "Full-Stack Product Engineer",
-    "sameAs": [
-      "https://www.linkedin.com/in/pradosh-chand-4b209027a/",
-      "https://github.com/naseeb7"
+    name: siteConfig.name,
+    url: siteConfig.url,
+    image: `${siteConfig.url}${siteConfig.ogImage}`,
+    jobTitle: "Full-Stack Product Engineer",
+    sameAs: [
+      "https://www.linkedin.com/in/pradosh-chand/",
+      "https://github.com/naseeb7",
+      "https://why.pradoshchand.dev",
     ],
-    "description": siteConfig.description
+    description: siteConfig.description,
   };
 
   return (
