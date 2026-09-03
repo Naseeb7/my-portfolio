@@ -1,37 +1,48 @@
 [
   {
-    "id": "gatsby-blog-platform",
-    "name": "Gatsby Blog Platform",
-    "overview": "Designed and built a production publishing platform for HexaHome that enabled non-technical teams to create, manage, and publish SEO-optimized content independently. The platform streamlined editorial workflows, improved developer experience through automation, and became a major acquisition channel, contributing 70% of the company's website traffic through organic search.",
-    "heroImage": "/projects/gatsby/hero-section.webp",
-    "challenge": "Building a scalable publishing platform that balanced editor usability, developer workflows, SEO optimization, and deployment automation while supporting long-term content growth without increasing engineering overhead.",
-    "projectDetails": [
-      "Architected and developed a Gatsby-based publishing platform from the ground up.",
-      "Designed a custom Markdown editor with autosave to improve the editorial workflow.",
-      "Engineered a Git-based publishing pipeline enabling structured content management and version control.",
-      "Optimized static generation, image processing, caching, and build performance for fast page delivery.",
-      "Implemented SEO-focused architecture to improve indexing, discoverability, and organic search visibility.",
-      "Automated deployment workflows to simplify publishing and reduce operational overhead.",
-      "Contributed to 70% of the company's website traffic through improved organic search performance."
-    ]
-  },
-  {
     "id": "nakama-tictactoe",
-    "name": "Authoritative Multiplayer Tic-Tac-Toe",
-    "overview": "Built a server-authoritative multiplayer game using Nakama to explore distributed systems, authoritative game servers, and realtime synchronization. Every gameplay action is validated on the server, ensuring fair gameplay while maintaining a responsive multiplayer experience.",
+    "name": "Nakama Authoritative Tic-Tac-Toe",
+    "featured": true,
+    "category": "Realtime Systems",
+    "type": "Independent",
+    "role": "Full-Stack Product Engineer",
+    "overview": "Built a server-authoritative multiplayer game to explore realtime systems, distributed state management, and authoritative game-server architecture. The server owns and validates gameplay state while the client focuses on presentation and interaction.",
     "heroImage": "/projects/nakama-tictactoe/hero-section.webp",
-    "challenge": "Designing a server-authoritative multiplayer architecture that maintained realtime synchronization, handled unreliable network conditions, and ensured gameplay integrity without sacrificing responsiveness.",
+    "challenge": "Design a multiplayer architecture where the server remains the source of truth for gameplay while handling realtime synchronization, matchmaking, disconnects, reconnections, and concurrent matches.",
     "projectDetails": [
-      "Engineered server-authoritative gameplay with all game logic executed and validated on the Nakama server.",
+      "Engineered server-authoritative gameplay with game logic executed and validated on the Nakama server.",
       "Implemented matchmaking, match lifecycle management, and realtime state synchronization.",
-      "Designed reliable player connection handling including joins, disconnects, reconnections, and match recovery.",
-      "Integrated the React frontend with the Nakama client SDK for seamless multiplayer interactions.",
+      "Designed connection handling for player joins, disconnects, reconnections, and match recovery.",
+      "Integrated the React frontend with the Nakama client SDK for realtime multiplayer interactions.",
       "Implemented deterministic move validation to prevent invalid or conflicting game states.",
-      "Containerized and deployed the backend using Docker while leveraging Railway for hosting.",
-      "Designed a scalable multiplayer architecture following modern distributed game server practices."
+      "Maintained isolated state for concurrent authoritative matches.",
+      "Implemented timed turns, leaderboard progression, and persistent match history.",
+      "Containerized the backend with Docker and deployed the server infrastructure using Railway."
     ],
+    "highlights": [
+      "Server-authoritative gameplay",
+      "Realtime multiplayer",
+      "Matchmaking",
+      "Reconnect recovery",
+      "Concurrent match state",
+      "Timed turns",
+      "Persistent match history"
+    ],
+    "stack": [
+      "Next.js",
+      "React",
+      "TypeScript",
+      "Nakama",
+      "WebSockets",
+      "Docker",
+      "Railway",
+      "Vercel"
+    ],
+    "outcome": "Built a complete multiplayer architecture where gameplay state and validation are owned by the authoritative server rather than trusted to the client.",
     "previewLink": "https://nakama-authoritative-tictactoe.vercel.app/",
-    "githubLink": "https://github.com/Naseeb7/nakama-authoritative-tictactoe",
+    "githubLinks": [
+      "https://github.com/Naseeb7/nakama-authoritative-tictactoe"
+    ],
     "images": [
       "/projects/nakama-tictactoe/1.webp",
       "/projects/nakama-tictactoe/2.webp",
@@ -41,18 +52,44 @@
   {
     "id": "isee",
     "name": "iSee – Video Calling Platform",
-    "overview": "Developed a realtime peer-to-peer communication platform focused on instant collaboration without requiring user registration. The application demonstrates realtime media streaming, signaling, session management, and responsive communication workflows.",
+    "featured": true,
+    "category": "Realtime Communication",
+    "type": "Independent",
+    "role": "Full-Stack Product Engineer",
+    "overview": "Built a peer-to-peer video communication platform for instant browser-based conversations without requiring user registration. The product combines WebRTC media communication, Socket.io signaling, realtime messaging, and room-based sessions.",
     "heroImage": "/projects/isee/hero-section.webp",
-    "challenge": "Building a reliable realtime communication platform that simplified peer connection setup while maintaining low-latency video streaming, session stability, and a frictionless user experience.",
+    "challenge": "Build a frictionless realtime communication experience that establishes peer connections without accounts while handling signaling, media sessions, room management, messaging, and connection lifecycle events.",
     "projectDetails": [
-      "Built realtime peer-to-peer video communication using WebRTC.",
-      "Implemented Socket.io signaling for session negotiation and connection management.",
-      "Designed instant room creation and unique session codes without requiring user accounts.",
-      "Developed integrated realtime messaging alongside live video communication.",
-      "Implemented connection lifecycle handling to improve session stability and user experience.",
-      "Built a responsive interface optimized for desktop and mobile devices using React and Tailwind CSS."
+      "Built peer-to-peer video communication using WebRTC.",
+      "Implemented Socket.io signaling for session negotiation and peer connection management.",
+      "Designed instant room creation using unique session codes without requiring user accounts.",
+      "Developed realtime messaging alongside live video communication.",
+      "Handled connection lifecycle events to improve session stability and recovery.",
+      "Built a responsive communication interface for desktop and mobile devices."
     ],
+    "highlights": [
+      "Peer-to-peer video",
+      "WebRTC media flow",
+      "Socket.io signaling",
+      "Room-based sessions",
+      "Realtime messaging",
+      "No registration required",
+      "Responsive interface"
+    ],
+    "stack": [
+      "React",
+      "Node.js",
+      "WebRTC",
+      "Socket.io",
+      "MongoDB",
+      "Tailwind CSS"
+    ],
+    "outcome": "Created a browser-based video communication workflow that establishes peer-to-peer sessions through room codes without requiring account registration.",
     "previewLink": "https://fabulous-sundae-c611c5.netlify.app/",
+    "githubLinks": [
+      "https://github.com/Naseeb7/iSee-client",
+      "https://github.com/Naseeb7/iSee-server"
+    ],
     "images": [
       "/projects/isee/1.webp",
       "/projects/isee/2.webp",
@@ -60,21 +97,85 @@
     ]
   },
   {
+    "id": "veyra-biotech",
+    "name": "Veyra – Biotech Landing Page",
+    "featured": true,
+    "category": "Frontend Engineering",
+    "type": "Independent",
+    "role": "Frontend Product Engineer",
+    "overview": "Built an animation-driven responsive landing page combining reusable React components, accessible navigation, responsive layouts, and sophisticated motion while keeping client-side interaction performant.",
+    "heroImage": "/projects/veyra/hero-section.webp",
+    "challenge": "Create a visually rich landing page with sophisticated scroll and interaction effects while maintaining responsive behavior, accessibility, reduced-motion support, and efficient client-side rendering.",
+    "projectDetails": [
+      "Built a responsive landing page using reusable React components and Next.js.",
+      "Implemented scroll-driven interaction and animation choreography using Framer Motion and GSAP.",
+      "Designed accessible navigation and interaction patterns across responsive breakpoints.",
+      "Added reduced-motion support for users who prefer limited animation.",
+      "Kept high-frequency interactions performant by minimizing unnecessary client-side state.",
+      "Structured the interface into reusable sections to support maintainable product development."
+    ],
+    "highlights": [
+      "Animation-driven interface",
+      "Responsive design",
+      "Reusable React components",
+      "Framer Motion",
+      "GSAP",
+      "Accessible navigation",
+      "Reduced-motion support"
+    ],
+    "stack": [
+      "Next.js",
+      "React",
+      "TypeScript",
+      "Tailwind CSS",
+      "Framer Motion",
+      "GSAP"
+    ],
+    "githubLinks": ["https://github.com/Naseeb7/veyra-biotech-landing"],
+    "images": [
+      "/projects/veyra/1.webp",
+      "/projects/veyra/2.webp",
+      "/projects/veyra/3.webp"
+    ]
+  },
+  {
     "id": "justsocial",
     "name": "JustSocial – Social Media Platform",
-    "overview": "Built a full-stack social networking platform supporting realtime communication, content sharing, profile management, and community engagement. The project demonstrates end-to-end product engineering across frontend, backend, authentication, and realtime systems.",
+    "featured": false,
+    "category": "Full-Stack Application",
+    "type": "Independent",
+    "role": "Full-Stack Product Engineer",
+    "overview": "Built a full-stack social networking platform covering authentication, profiles, relationships, content feeds, realtime messaging, notifications, and community interactions. The project demonstrates end-to-end product engineering across the client, server, data layer, and realtime communication.",
     "heroImage": "/projects/justsocial/hero-section.webp",
-    "challenge": "Designing a scalable social platform that combined realtime messaging, dynamic content feeds, user relationships, and secure authentication into a cohesive product experience.",
+    "challenge": "Build a cohesive social product combining dynamic content, user relationships, realtime communication, authentication, and responsive interfaces while keeping the application structured for continued feature development.",
     "projectDetails": [
-      "Engineered a production-style full-stack application using React, Node.js, Express.js, and MongoDB.",
+      "Engineered a full-stack application using React, Node.js, Express.js, and MongoDB.",
       "Implemented realtime messaging and notifications using WebSockets.",
-      "Built dynamic content feeds supporting posts, comments, likes, and user interactions.",
+      "Built dynamic content feeds supporting posts, comments, likes, and other user interactions.",
       "Designed user relationship management including friend requests, connections, and profile management.",
       "Implemented authentication, authorization, and secure session handling.",
-      "Developed responsive, accessible user interfaces with Material UI across desktop and mobile devices.",
-      "Structured the application to support scalable feature development and maintainable code organization."
+      "Developed responsive interfaces using Material UI across desktop and mobile devices.",
+      "Structured frontend and backend functionality to support maintainable feature development."
+    ],
+    "highlights": [
+      "Full-stack architecture",
+      "Realtime messaging",
+      "WebSocket notifications",
+      "Content feeds",
+      "User relationships",
+      "Authentication",
+      "Responsive UI"
+    ],
+    "stack": [
+      "React",
+      "Node.js",
+      "Express.js",
+      "MongoDB",
+      "WebSockets",
+      "Material UI"
     ],
     "previewLink": "https://astonishing-gelato-875bc7.netlify.app/home",
+    "githubLinks": [],
     "credentials": {
       "email": "test@test.com",
       "password": "testtest"

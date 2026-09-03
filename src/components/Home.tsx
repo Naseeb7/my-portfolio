@@ -12,6 +12,7 @@ import PersonSchema from "./SEO/PersonSchema";
 import ProjectSchema from "./SEO/ProjectSchema";
 
 const Home = () => {
+  const featuredProjects = Projects.filter((project) => project.featured);
   return (
     <section className="flex w-full flex-col gap-3">
       {/* Structured Data */}
@@ -87,7 +88,7 @@ const Home = () => {
         </Link>
         <Suspense fallback={<div>Loading projects...</div>}>
           <ProjectsGrid
-            projects={Projects}
+            projects={featuredProjects}
             className="lg:grid-cols-3"
             showNames={false}
           />
