@@ -2,7 +2,6 @@ import React from "react";
 
 type SkillCardProps = {
   name: string;
-  rating?: number;
   desc?: string;
 };
 

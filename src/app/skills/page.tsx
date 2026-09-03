@@ -45,9 +45,8 @@ const SkillsPage = () => {
 
         <div className="flex flex-col gap-6">
           <p>
-            A production-focused engineering stack spanning frontend, mobile,
-            backend, cloud, and realtime systems—selected to build scalable,
-            maintainable products from architecture to production.
+            A full-stack engineering toolkit spanning web, mobile, backend,
+            realtime systems, infrastructure, and production delivery.
           </p>
           {Object.entries(Skills).map(([category, skillList]) => (
             <section key={category} className="flex flex-col gap-4">
@@ -55,8 +54,8 @@ const SkillsPage = () => {
                 {category}
               </h2>
               <div className="grid gap-3 lg:grid-cols-2">
-                {skillList.map((skill) => (
-                  <SkillCard key={skill.id} {...skill} />
+                {skillList.map((skill, index) => (
+                  <SkillCard key={index} {...skill} />
                 ))}
               </div>
             </section>

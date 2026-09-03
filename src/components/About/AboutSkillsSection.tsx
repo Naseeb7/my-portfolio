@@ -18,8 +18,8 @@ const AboutSkillsSection = () => {
           />
         </div>
         <p className="font-medium w-full">
-          Frontend engineering, product ownership, scalable architecture, and
-          production-ready systems.
+          Full-stack product engineering across web, mobile, backend, realtime
+          systems, and production delivery.
         </p>
       </ContainerWrapper>
     </Link>

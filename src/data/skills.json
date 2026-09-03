@@ -1,167 +1,117 @@
 {
   "Frontend Engineering": [
     {
-      "id": "javascript",
       "name": "JavaScript",
-      "rating": 5,
       "desc": "Built interactive production features across web and mobile applications using modern JavaScript, asynchronous programming, and browser APIs."
     },
     {
-      "id": "typescript",
       "name": "TypeScript",
-      "rating": 5,
-      "desc": "Designed scalable, maintainable applications with strong typing, shared interfaces, and an improved developer experience."
+      "desc": "Designed maintainable applications with strong typing, shared interfaces, and improved developer experience across frontend and backend systems."
     },
     {
-      "id": "reactjs",
       "name": "React.js",
-      "rating": 5,
-      "desc": "Built scalable production interfaces with reusable component architecture, efficient state management, and performance-focused user experiences."
+      "desc": "Built production interfaces with reusable component architecture, state management, and performance-focused user experiences."
     },
     {
-      "id": "nextjs",
       "name": "Next.js",
-      "rating": 5,
-      "desc": "Developed production-ready applications using the App Router, server rendering, API routes, SEO optimization, and modern deployment workflows."
+      "desc": "Developed production applications using the App Router, server rendering, API routes, SEO optimization, and modern deployment workflows."
     },
     {
-      "id": "tailwindcss",
       "name": "Tailwind CSS",
-      "rating": 5,
-      "desc": "Built responsive, maintainable interfaces using a utility-first approach and reusable design patterns."
+      "desc": "Built responsive, maintainable interfaces using utility-first styling and reusable design patterns."
     },
     {
-      "id": "material-ui",
       "name": "Material UI",
-      "rating": 4,
-      "desc": "Developed consistent and accessible user interfaces using reusable component libraries."
+      "desc": "Developed consistent and accessible interfaces using reusable component libraries and responsive design patterns."
     }
   ],
   "Mobile Engineering": [
     {
-      "id": "react-native",
       "name": "React Native",
-      "rating": 4,
       "desc": "Built and maintained production cross-platform mobile applications, redesigned application architecture, and managed Android and iOS releases."
     }
   ],
   "Backend Engineering": [
     {
-      "id": "nodejs",
       "name": "Node.js",
-      "rating": 5,
       "desc": "Designed backend services, reusable REST APIs, automation workflows, and production systems supporting web and mobile applications."
     },
     {
-      "id": "expressjs",
       "name": "Express.js",
-      "rating": 5,
       "desc": "Built modular backend architectures with authentication, middleware pipelines, REST APIs, and reusable service layers."
     },
     {
-      "id": "graphql",
       "name": "GraphQL",
-      "rating": 3,
-      "desc": "Integrated GraphQL APIs to efficiently query and deliver application data where appropriate."
+      "desc": "Built GraphQL APIs with schemas, queries, mutations, resolvers, and full CRUD workflows, including application-side data fetching and integration."
     }
   ],
-  "Realtime Systems": [
+  "Realtime & Communication": [
     {
-      "id": "websockets",
       "name": "WebSockets",
-      "rating": 4,
       "desc": "Implemented realtime communication for multiplayer experiences, messaging, notifications, and live application updates."
     },
     {
-      "id": "webrtc",
       "name": "WebRTC",
-      "rating": 3,
       "desc": "Built peer-to-peer realtime audio and video communication with signaling and connection management."
     }
   ],
   "Data & Infrastructure": [
     {
-      "id": "mongodb",
       "name": "MongoDB",
-      "rating": 5,
-      "desc": "Designed application data models, optimized queries, and supported scalable backend architectures for production workloads."
+      "desc": "Designed application data models, optimized queries, and supported backend architectures for production applications."
     },
     {
-      "id": "redis",
       "name": "Redis",
-      "rating": 3,
-      "desc": "Used in-memory caching and session storage to improve application performance and scalability."
+      "desc": "Implemented production caching for frequently accessed data such as property listings and authenticated user information, using TTL-based expiration to reduce repeated backend and database queries."
     }
   ],
   "Cloud & Deployment": [
     {
-      "id": "aws-s3-ec2",
       "name": "AWS S3 & EC2",
-      "rating": 4,
-      "desc": "Managed cloud storage, deployed backend services, and supported production infrastructure on AWS."
+      "desc": "Used S3 for environment-separated assets, uploaded media, and static content with signed URLs, and ran backend services on EC2. Also configured a versioned S3-based deployment and content architecture for a Gatsby publishing platform."
     },
     {
-      "id": "firebase",
       "name": "Firebase",
-      "rating": 4,
-      "desc": "Integrated authentication, cloud messaging, and supporting backend services for mobile applications."
+      "desc": "Integrated Firebase Cloud Messaging for backend-triggered notifications, including storing and managing user FCM tokens for authenticated devices and Android development builds."
     },
     {
-      "id": "docker",
       "name": "Docker",
-      "rating": 3,
       "desc": "Containerized applications for consistent local development and production deployments."
     },
     {
-      "id": "vercel",
       "name": "Vercel",
-      "rating": 5,
       "desc": "Deployed and maintained production Next.js applications with automated deployment workflows."
     }
   ],
-  "Payments & Integrations": [
+  "Payments & AI": [
     {
-      "id": "razorpay",
       "name": "Razorpay",
-      "rating": 5,
       "desc": "Implemented secure payment flows, subscriptions, and transaction processing for production applications."
     },
     {
-      "id": "stripe",
       "name": "Stripe",
-      "rating": 4,
-      "desc": "Integrated payment processing and subscription workflows for SaaS and product applications."
+      "desc": "Implemented webhook-driven payment processing with pending transaction states, database updates, and backend actions based on confirmed payment status."
     },
     {
-      "id": "paypal",
       "name": "PayPal",
-      "rating": 4,
-      "desc": "Integrated payment gateways and routing logic for international payment workflows."
+      "desc": "Implemented webhook-driven payment processing with pending transaction states and configurable routing between separate PayPal accounts based on business requirements."
     },
     {
-      "id": "openai",
       "name": "OpenAI API",
-      "rating": 4,
-      "desc": "Integrated AI-powered capabilities such as automated content generation into production applications."
+      "desc": "Integrated AI-powered capabilities such as automated property content generation into production applications."
     }
   ],
   "Developer Workflow": [
     {
-      "id": "git-github",
       "name": "Git & GitHub",
-      "rating": 5,
       "desc": "Managed collaborative development through feature branching, code reviews, release workflows, and production deployments."
     },
     {
-      "id": "postman",
       "name": "Postman",
-      "rating": 5,
       "desc": "Designed, tested, and documented APIs throughout the development lifecycle."
     },
     {
-      "id": "sentry",
       "name": "Sentry",
-      "rating": 4,
       "desc": "Monitored production applications, investigated runtime issues, and supported faster incident resolution."
     }
   ]
