@@ -21,16 +21,24 @@ const Home = () => {
       {/* Top Section */}
       <ContainerWrapper className="relative flex-col gap-5">
         <h1 className="text-3xl lg:text-[52px] font-extrabold">
-          Building production products through frontend engineering,
-          architecture, and ownership.
+          Full-Stack Product Engineer
         </h1>
-        <Link href={"/contact"}>
+
+        <p className="font-medium text-secondary-100">
+          Web & Mobile · React · Next.js · React Native · TypeScript · Node.js
+        </p>
+
+        <p>
+          I build and ship products end-to-end — from architecture and backend
+          systems to polished interfaces, mobile apps, and production releases.
+        </p>
+        <Link href={"/projects"}>
           <Button
-            className="lg:absolute bottom-5 right-5"
+            className="self-start"
             rounded="rounded-full"
             width="w-full lg:w-1/4"
           >
-            Work With Me👋
+            View My Work
           </Button>
         </Link>
       </ContainerWrapper>
@@ -53,12 +61,10 @@ const Home = () => {
             />
           </div>
           <p>
-            Frontend Product Engineer with experience owning production web,
-            mobile, and backend systems in startup environments. Designed
-            frontend architecture, built scalable backend services, managed
-            production deployments, mentored engineers, and collaborated across
-            product, design, and leadership to deliver reliable software from
-            concept to production.
+            I’ve owned production systems across web, mobile, and backend —
+            designing architecture, building core product functionality,
+            shipping releases, solving production issues, and helping teams
+            deliver through changing requirements.
           </p>
         </ContainerWrapper>
       </Link>

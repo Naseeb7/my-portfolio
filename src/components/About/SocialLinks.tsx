@@ -19,15 +19,13 @@ const SocialLinks = () => {
           <span>Pradosh Chand</span>
         </ContainerWrapper>
         <ContainerWrapper className="justify-between font-medium">
-          <span className="text-secondary-100">Location:</span>
-          <span>Somewhere in OD</span>
+          <span className="text-secondary-100">Focus:</span>
+          <span>Web & Mobile Engineering</span>
         </ContainerWrapper>
-        <a href={"tel:+919937417411"} aria-label={"phone"}>
-          <ContainerWrapper className="justify-between font-medium">
-            <span className="text-secondary-100">Phone Number:</span>
-            <span>(+91) 99374-17411 </span>
-          </ContainerWrapper>
-        </a>
+        <ContainerWrapper className="justify-between font-medium">
+          <span className="text-secondary-100">Location:</span>
+          <span>India · Open to Relocation</span>
+        </ContainerWrapper>
         <ContainerWrapper className="justify-between">
           {socials.map((item) => (
             <a
