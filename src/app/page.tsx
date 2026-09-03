@@ -6,16 +6,17 @@ export const metadata: Metadata = {
   ...createPageMetadata({
     title: siteConfig.title,
     description:
-      "Full Stack Developer building scalable web and mobile products with Next.js, React Native, Node.js, and MongoDB.",
+      "Full-Stack Product Engineer building and shipping web, mobile, and backend products with React, Next.js, React Native, TypeScript, and Node.js.",
     path: "/",
     keywords: [
       "Pradosh Chand",
-      "Full Stack Developer",
+      "Full-Stack Product Engineer",
+      "Software Engineer",
+      "React",
       "Next.js",
       "React Native",
+      "TypeScript",
       "Node.js",
-      "MongoDB",
-      "Developer Portfolio",
     ],
   }),
   title: {

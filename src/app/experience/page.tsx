@@ -14,15 +14,17 @@ const Experiences = ExperiencesData as IExperience[];
 export const metadata: Metadata = createPageMetadata({
   title: "Experience",
   description:
-    "Explore my experience owning frontend architecture, production web and mobile applications, backend systems, and engineering delivery across fast-paced startup environments.",
+    "Explore Pradosh Chand's experience building and shipping production web, mobile, and backend systems, with end-to-end technical ownership and engineering leadership.",
   path: "/experience",
   keywords: [
     "Pradosh Chand",
-    "Frontend Product Engineer",
-    "React Developer",
-    "Next.js Engineer",
+    "Full-Stack Product Engineer",
+    "Software Engineer",
     "Product Engineer",
-    "Software Engineer Portfolio",
+    "React Developer",
+    "React Native Developer",
+    "Node.js Engineer",
+    "Engineering Leadership",
   ],
 });
 

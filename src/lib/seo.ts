@@ -3,9 +3,9 @@ import type { Metadata } from "next";
 export const siteConfig = {
   name: "Pradosh Chand",
   siteName: "Pradosh Chand Portfolio",
-  title: "Pradosh Chand | Full Stack Developer",
+  title: "Pradosh Chand | Full-Stack Product Engineer",
   description:
-    "Full Stack Developer building scalable web and mobile products with Next.js, React Native, Node.js, and MongoDB.",
+    "Full-Stack Product Engineer building and shipping web, mobile, and backend products with React, Next.js, React Native, TypeScript, and Node.js.",
   url: "https://pradoshchand.dev",
   ogImage: "/profile-image.webp",
   locale: "en_US",

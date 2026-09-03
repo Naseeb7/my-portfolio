@@ -22,6 +22,7 @@ export const metadata: Metadata = {
   description: siteConfig.description,
   keywords: [
     "Pradosh Chand",
+    "Full-Stack Product Engineer",
     "Full Stack Developer",
     "Next.js Developer",
     "React Native Developer",

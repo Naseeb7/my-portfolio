@@ -10,15 +10,18 @@ import { createPageMetadata, getAbsoluteUrl } from "@/lib/seo";
 export const metadata: Metadata = createPageMetadata({
   title: "Skills",
   description:
-    "Explore the technologies, tools, and engineering capabilities I use to design, build, and ship production-ready web, mobile, and backend systems.",
+    "Explore the technologies and engineering capabilities Pradosh Chand uses to build and ship production web, mobile, backend, and realtime systems.",
   path: "/skills",
   keywords: [
     "Pradosh Chand",
-    "Frontend Product Engineer",
+    "Full-Stack Product Engineer",
+    "Software Engineer",
     "React",
     "Next.js",
+    "React Native",
     "TypeScript",
     "Node.js",
+    "MongoDB",
     "Product Engineering",
   ],
 });
