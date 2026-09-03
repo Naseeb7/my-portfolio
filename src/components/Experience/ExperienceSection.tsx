@@ -1,7 +1,6 @@
 import { IExperience } from "@/constants/types";
 
 const ExperienceSection = ({
-  type,
   role,
   company,
   period,
@@ -20,12 +19,6 @@ const ExperienceSection = ({
         </div>
 
         <p className="text-sm opacity-60">{period}</p>
-
-        {type === "independent" && (
-          <p className="text-xs uppercase tracking-wider opacity-50">
-            Independent Product Engineering
-          </p>
-        )}
       </div>
 
       <section className="flex flex-col gap-3">
@@ -34,7 +27,9 @@ const ExperienceSection = ({
       </section>
 
       <section className="flex flex-col gap-3">
-        <h3 className="text-base font-semibold">Product Engineering</h3>
+        <h3 className="text-base font-semibold">
+          Engineering & Product Ownership
+        </h3>
 
         <ul className="flex flex-col gap-3">
           {responsibilities.map((item, index) => (
