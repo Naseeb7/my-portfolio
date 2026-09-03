@@ -44,9 +44,9 @@ const ProjectsPage = () => {
 
       <ContainerWrapper className="gap-8 flex-col">
         <div className="flex w-full justify-between items-center">
-          <p className="text-[32px] font-extrabold">
+          <h1 className="text-[32px] font-extrabold">
             Engineering <span className="text-primary-100">Projects</span>
-          </p>
+          </h1>
           <Link href={"/"}>
             <Image
               src={"/icons/crossIcon.svg"}

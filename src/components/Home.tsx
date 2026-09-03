@@ -17,7 +17,7 @@ const Home = () => {
     <section className="flex w-full flex-col gap-3">
       {/* Structured Data */}
       <PersonSchema />
-      <ProjectSchema projects={Projects} />
+      <ProjectSchema projects={featuredProjects} />
 
       {/* Top Section */}
       <ContainerWrapper className="relative flex-col gap-5">
