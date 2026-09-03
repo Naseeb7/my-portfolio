@@ -7,12 +7,15 @@ const ProjectSchema = ({ projects }: { projects: IProject[] }) => {
     "@context": "https://schema.org",
     "@type": "ItemList",
     itemListElement: projects.map((project, index) => ({
-      "@type": "CreativeWork",
+      "@type": "ListItem",
       position: index + 1,
-      name: project.name,
-      description: project.overview,
-      url: project.previewLink ?? "",
-      image: `${siteConfig.url}${project.heroImage}`,
+      item: {
+        "@type": "CreativeWork",
+        name: project.name,
+        description: project.overview,
+        ...(project.previewLink ? { url: project.previewLink } : {}),
+        image: `${siteConfig.url}${project.heroImage}`,
+      },
     })),
   };
 

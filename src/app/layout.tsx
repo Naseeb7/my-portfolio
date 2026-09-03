@@ -23,7 +23,7 @@ export const metadata: Metadata = {
   keywords: [
     "Pradosh Chand",
     "Full-Stack Product Engineer",
-    "Full Stack Developer",
+    "Software Engineer",
     "Next.js Developer",
     "React Native Developer",
     "Node.js Developer",

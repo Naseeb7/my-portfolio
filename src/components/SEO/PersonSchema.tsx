@@ -5,15 +5,11 @@ const PersonSchema = () => {
   const schemaData = {
     "@context": "https://schema.org",
     "@type": "Person",
-    "name": "Pradosh Chand",
+    "@id": `${siteConfig.url}#person`,
+    "name": siteConfig.name,
     "url": siteConfig.url,
     "image": `${siteConfig.url}${siteConfig.ogImage}`,
-    "jobTitle": "Full Stack Developer",
-    "worksFor": {
-      "@type": "Organization",
-      "name": "Hexadecimal Software Pvt Ltd"
-    },
-    "alumniOf": "", // Add your education if applicable
+    "jobTitle": "Full-Stack Product Engineer",
     "sameAs": [
       "https://www.linkedin.com/in/pradosh-chand-4b209027a/",
       "https://github.com/naseeb7"
