@@ -12,15 +12,18 @@ import { createPageMetadata, getAbsoluteUrl } from "@/lib/seo";
 export const metadata: Metadata = createPageMetadata({
   title: "Projects",
   description:
-    "Explore engineering projects showcasing frontend architecture, realtime systems, backend engineering, product ownership, and production-ready applications.",
+    "Explore engineering projects across web, mobile, backend systems, realtime applications, and end-to-end product development.",
   path: "/projects",
   image: "/projects/coverdev/hero-section.webp",
   keywords: [
     "Pradosh Chand",
-    "Frontend Product Engineer",
+    "Full-Stack Product Engineer",
+    "Software Engineer",
     "Engineering Portfolio",
     "Next.js Projects",
     "React Projects",
+    "React Native Projects",
+    "Node.js Projects",
     "Realtime Systems",
     "System Design",
   ],
@@ -42,7 +45,7 @@ const ProjectsPage = () => {
       <ContainerWrapper className="gap-8 flex-col">
         <div className="flex w-full justify-between items-center">
           <p className="text-[32px] font-extrabold">
-            Featured <span className="text-primary-100">Projects</span>
+            Engineering <span className="text-primary-100">Projects</span>
           </p>
           <Link href={"/"}>
             <Image
@@ -53,6 +56,10 @@ const ProjectsPage = () => {
             />
           </Link>
         </div>
+        <p className="max-w-3xl leading-7 text-secondary-100">
+          A selection of web, mobile, and backend projects focused on product
+          engineering, realtime systems, and end-to-end technical ownership.
+        </p>
         <Suspense fallback={<div>Loading engineering projects...</div>}>
           <ProjectsGrid projects={Projects} className="lg:grid-cols-2" />
         </Suspense>
