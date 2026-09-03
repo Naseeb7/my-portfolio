@@ -21,13 +21,21 @@ export interface IProject {
   images?: string[];
 }
 
+export interface IExperienceProject {
+  name: string;
+  description: string;
+  highlights: string[];
+  technologies: string[];
+}
+
 export interface IExperience {
+  type: "employment" | "independent";
   role: string;
   company: string;
-  startDate: string;
-  endDate: string | "Present";
-  experience: string[];
-  keyAchievements: string[];
-  awards?: string[];
-  technologiesUsed: string[];
+  period: string;
+  summary: string;
+  responsibilities: string[];
+  projects?: IExperienceProject[];
+  leadership?: string[];
+  achievements?: string[];
 }

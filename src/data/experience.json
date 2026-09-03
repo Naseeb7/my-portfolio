@@ -1,38 +1,56 @@
 [
   {
-    "role": "Software Developer (Promoted to Team Lead)",
+    "type": "employment",
+    "role": "Software Developer → Team Lead",
     "company": "Hexadecimal Software Pvt Ltd",
-    "startDate": "Sep 2023",
-    "endDate": "Jul 2025",
-    "experience": [
-      "Progressively assumed ownership of the company's React web application, React Native mobile application, and Node.js backend, delivering customer-facing features from technical design through production deployment as engineering responsibilities expanded.",
-      "Re-architected the React Native application by redesigning navigation, application hierarchy, and code organization, improving maintainability and enabling the product to scale with evolving business requirements.",
-      "Architected reusable backend services supporting authentication, property search, AI-assisted content generation, and dynamic workflows.",
-      "Engineered a cross-platform URL parsing framework enabling seamless deep linking between web and mobile applications.",
-      "Delivered business-critical capabilities including payment integrations (Razorpay), save-and-resume workflows, onboarding experiences, real-time application features, and AI-assisted property description generation using OpenAI APIs.",
-      "Owned production engineering across web and mobile, managing production deployments, Android and iOS releases, emergency hotfixes, incident resolution, and application stability in live environments.",
-      "Collaborated closely with product, design, QA, and leadership while mentoring interns, supporting technical knowledge sharing, and taking on progressively greater technical ownership across the engineering organization."
+    "period": "Sep 2023 – Jul 2025",
+    "summary": "Built and shipped production web, mobile, and backend systems for an enterprise real estate SaaS platform, progressively taking ownership across technical design, implementation, releases, and production engineering.",
+    "responsibilities": [
+      "Owned end-to-end delivery across React web, React Native mobile, and Node.js backend systems, taking product work from technical design through implementation, release, and production support.",
+      "Re-architected the React Native application by redesigning navigation, application hierarchy, and code organization to improve maintainability as the product evolved.",
+      "Designed reusable backend APIs and service layers supporting authentication, property management, property search, AI-assisted content generation, and dynamic workflows.",
+      "Engineered cross-platform URL parsing and deep linking between web and mobile applications for property URLs and shared product flows.",
+      "Delivered business-critical product capabilities including save-and-resume workflows, onboarding, Razorpay payments, real-time application features, and AI-assisted property description generation using OpenAI APIs.",
+      "Owned production engineering across web and mobile, including deployments, Android and iOS builds, Play Store and App Store releases, emergency hotfixes, incident investigation, and production issue resolution."
     ],
-    "keyAchievements": [
-      "Progressively assumed ownership across frontend, mobile, and backend systems, becoming a primary engineering contributor as responsibilities expanded.",
-      "Designed architecture that enabled future product expansion instead of short-term feature implementation.",
-      "Led production deployments, release management, and incident resolution across customer-facing applications."
+    "projects": [
+      {
+        "name": "Gatsby Publishing Platform",
+        "description": "Built a publishing platform from scratch for the company's website, including a custom Markdown editor and Git-based publishing workflow.",
+        "highlights": [
+          "Built the platform and publishing workflow from scratch.",
+          "Implemented autosave and Git-based content publishing.",
+          "Optimized static-site generation, SEO, caching, deployment automation, and build performance.",
+          "The resulting platform powered approximately 70% of company website traffic."
+        ],
+        "technologies": ["Gatsby", "React", "JavaScript", "Markdown", "Git"]
+      }
     ],
-    "awards": ["Employee of the Month - Dec 2023"],
-    "technologiesUsed": [
-      "nextjs",
-      "react-native",
-      "reactjs",
-      "nodejs",
-      "express",
-      "mongodb",
-      "typescript",
-      "javascript",
-      "aws-s3-ec2",
-      "redis",
-      "chakraui",
-      "tailwindcss",
-      "git-github"
+    "leadership": [
+      "Mentored interns and conducted code reviews while supporting technical knowledge sharing across the engineering team.",
+      "Worked across product, design, QA, and leadership to maintain delivery continuity and resolve technical issues.",
+      "Progressed from Software Developer to Team Lead within 8 months as technical ownership expanded."
+    ],
+    "achievements": [
+      "Employee of the Month — Dec 2023",
+      "Promoted to Team Lead within 8 months"
+    ]
+  },
+  {
+    "type": "independent",
+    "role": "Product Engineer & Technical Lead",
+    "company": "Lyaim — Independent Project",
+    "period": "~3 months",
+    "summary": "Led engineering for a US-focused fantasy gaming and fantasy football product, designing the backend architecture and core systems for sports data processing, fantasy scoring, contests, prizes, and wallet functionality.",
+    "responsibilities": [
+      "Designed a provider-agnostic sports data architecture to support live sports workflows and reduce dependency on a single data provider.",
+      "Built automated sports data processing workflows for daily synchronization, upcoming lineups, live match data, match completion, and prize distribution.",
+      "Designed the fantasy scoring engine and contest and prize systems around provider-supplied sports data.",
+      "Designed backend architecture for wallet and payment functionality and the broader product workflow.",
+      "Led the engineering team for approximately two months, providing technical direction and coordinating implementation across the product."
+    ],
+    "leadership": [
+      "Led the engineering team during the core development phase and drove technical decisions across backend architecture and product systems."
     ]
   }
 ]

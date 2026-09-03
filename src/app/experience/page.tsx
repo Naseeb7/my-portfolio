@@ -1,12 +1,15 @@
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
-import Experiences from "@/data/experience.json";
-import ExperienceSection from "../../components/ExperienceSection";
+import ExperiencesData from "@/data/experience.json";
 import ContainerWrapper from "../../components/ContainerWrapper";
 import { Metadata } from "next";
 import BreadcrumbSchema from "@/components/SEO/BreadcrumbSchema";
 import { createPageMetadata, getAbsoluteUrl } from "@/lib/seo";
+import ExperienceTimeline from "@/components/Experience/ExperienceTimeline";
+import { IExperience } from "@/constants/types";
+
+const Experiences = ExperiencesData as IExperience[];
 
 export const metadata: Metadata = createPageMetadata({
   title: "Experience",
@@ -50,12 +53,7 @@ const ExperiencePage = () => {
           </Link>
         </div>
         <div>
-          {Experiences?.map((experience, index) => (
-            <ExperienceSection
-              key={`${experience.role}_${index}`}
-              {...experience}
-            />
-          ))}
+          <ExperienceTimeline experiences={Experiences} />
         </div>
       </ContainerWrapper>
     </section>
