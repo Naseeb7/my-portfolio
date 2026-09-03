@@ -86,7 +86,7 @@
   "Payments & AI": [
     {
       "name": "Razorpay",
-      "desc": "Implemented secure payment flows, subscriptions, and transaction processing for production applications."
+      "desc": "Implemented secure payment flows and transaction processing for production applications."
     },
     {
       "name": "Stripe",
