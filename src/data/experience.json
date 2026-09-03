@@ -4,32 +4,43 @@
     "role": "Software Developer → Team Lead",
     "company": "Hexadecimal Software Pvt Ltd",
     "period": "Sep 2023 – Jul 2025",
-    "summary": "Built and shipped production web, mobile, and backend systems for an enterprise real estate SaaS platform, progressively taking ownership across technical design, implementation, releases, and production engineering.",
+    "summary": "Built and shipped production web, mobile, and backend systems for an enterprise real estate SaaS platform, progressing from feature delivery to end-to-end technical ownership across architecture, implementation, releases, and production engineering.",
     "responsibilities": [
       "Owned end-to-end delivery across React web, React Native mobile, and Node.js backend systems, taking product work from technical design through implementation, release, and production support.",
-      "Re-architected the React Native application by redesigning navigation, application hierarchy, and code organization to improve maintainability as the product evolved.",
-      "Designed reusable backend APIs and service layers supporting authentication, property management, property search, AI-assisted content generation, and dynamic workflows.",
-      "Engineered cross-platform URL parsing and deep linking between web and mobile applications for property URLs and shared product flows.",
-      "Delivered business-critical product capabilities including save-and-resume workflows, onboarding, Razorpay payments, real-time application features, and AI-assisted property description generation using OpenAI APIs.",
-      "Owned production engineering across web and mobile, including deployments, Android and iOS builds, Play Store and App Store releases, emergency hotfixes, incident investigation, and production issue resolution."
+      "Redesigned the React Native application architecture, including navigation, root hierarchy, and code splitting to improve maintainability and support continued product growth.",
+      "Designed backend REST APIs and reusable service layers for authentication, property management, search, AI-generated content, and dynamic forms.",
+      "Implemented cross-platform URL parsing and deep linking for property URLs across web and mobile experiences.",
+      "Delivered business-critical capabilities including save/resume forms, Razorpay payments, OpenAI-powered property descriptions, onboarding workflows, and realtime product functionality.",
+      "Owned production releases, hotfixes, Android and iOS builds, Play Store and App Store deployments, issue investigation, and production incident resolution."
     ],
     "projects": [
       {
-        "name": "Gatsby Publishing Platform",
-        "description": "Built a publishing platform from scratch for the company's website, including a custom Markdown editor and Git-based publishing workflow.",
+        "name": "Enterprise Real Estate SaaS Platform",
+        "description": "Contributed across web, mobile, admin, and backend systems for an enterprise real estate SaaS product covering property listings, subscriptions, analytics, onboarding, and realtime workflows.",
         "highlights": [
-          "Built the platform and publishing workflow from scratch.",
-          "Implemented autosave and Git-based content publishing.",
-          "Optimized static-site generation, SEO, caching, deployment automation, and build performance.",
-          "The resulting platform powered approximately 70% of company website traffic."
+          "Built product functionality across frontend, mobile, and backend for property management, search, onboarding, subscriptions, and user workflows."
+        ],
+        "technologies": [
+          "React",
+          "React Native",
+          "Node.js",
+          "TypeScript",
+          "MongoDB"
+        ]
+      },
+      {
+        "name": "Gatsby Publishing Platform",
+        "description": "Built a Gatsby-based publishing platform from scratch with a custom Markdown editor, autosave, and Git-based publishing workflow.",
+        "highlights": [
+          "Optimized static site generation, SEO, caching, deployment automation, and build performance.",
+          "The platform supported approximately 70% of company website traffic."
         ],
         "technologies": ["Gatsby", "React", "JavaScript", "Markdown", "Git"]
       }
     ],
     "leadership": [
       "Mentored interns and conducted code reviews while supporting technical knowledge sharing across the engineering team.",
-      "Worked across product, design, QA, and leadership to maintain delivery continuity and resolve technical issues.",
-      "Progressed from Software Developer to Team Lead within 8 months as technical ownership expanded."
+      "Worked across product, design, QA, and leadership to maintain delivery continuity and resolve technical issues."
     ],
     "achievements": [
       "Employee of the Month — Dec 2023",
@@ -39,7 +50,7 @@
   {
     "type": "independent",
     "role": "Product Engineer & Technical Lead",
-    "company": "Lyaim — Independent Project",
+    "company": "Independent Product Engineering",
     "period": "~3 months",
     "summary": "Led engineering for a US-focused fantasy gaming and fantasy football product, designing the backend architecture and core systems for sports data processing, fantasy scoring, contests, prizes, and wallet functionality.",
     "responsibilities": [
@@ -48,9 +59,6 @@
       "Designed the fantasy scoring engine and contest and prize systems around provider-supplied sports data.",
       "Designed backend architecture for wallet and payment functionality and the broader product workflow.",
       "Led the engineering team for approximately two months, providing technical direction and coordinating implementation across the product."
-    ],
-    "leadership": [
-      "Led the engineering team during the core development phase and drove technical decisions across backend architecture and product systems."
     ]
   }
 ]
